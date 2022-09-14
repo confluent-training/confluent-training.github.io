@@ -1,0 +1,14 @@
+{
+  "namespace": "clients.avro",
+  "type": "record",
+  "name": "WritingUtensil",
+  "fields": [
+      {"name": "type", "type": "string", "default": "pen"},
+      {"name": "tipSizeMM", "type": "double", "doc": "size of tip in mm"},
+      {"name": "color", "type": { 
+                            "type": "enum",
+                            "name": "color",
+                            "symbols": "blue", "black", "red", "green"},
+      {"name": "brand", "type": "string"}
+  ]
+}
