@@ -1,0 +1,68 @@
+<html>
+
+   <head><title>Warm-up Discussion Questions</title></head>
+
+   <body>
+
+      <h1>Warm-Up Discussion: Some Review of Kafka Concepts</h1>
+
+      <p>Chat with a neighbor or two about these questions to review some 
+         ideas about Kafka that will end up being important things in this course 
+         and help each other out. There's a time on each; don't spend longer than that time. 
+      </p>
+
+
+      <h2>Question 1 (9 mins)</h2>
+
+      <p>Suppose you have a new producer. Suppose, further, <font face="monospace">linger.ms</font>
+         has been increased from its default to 5 minutes. 
+      </p>
+
+      <ol type="a">
+         <li>You send a message and it gets partitioned to partition <i>p</i><sub>5</sub>. 
+             What all happens from the moment that assignment is determined until the message
+             makes it to the page cache of the broker containing <i>p</i><sub>5</sub>?
+         </li>
+
+         <li>Suppose, now, an overall total of 31.9 MB of messages has been produced by this
+             producer and assigned to various partitions. No broker yet knows anything about any of
+             these messages. You send a message of size 0.5 MB. Does it fail? Explain why or why
+             not.
+         </li>
+      </ol>
+
+
+      <h2>Question 2 (8 mins)</h2>
+
+
+      <p>Suppose you have 5 brokers. We will concern ourselves with a partition 
+         <i>p</i><sub>1</sub>.
+      </p>
+
+      <ol type="a">
+         <li>Suppose replication factor for <i>p</i><sub>1</sub> is 3. Illustrate a possible 
+             scenario.
+         </li>
+
+         <li>Suppose replication factor for <i>p</i><sub>1</sub> is instead 7. Illustrate a 
+             possible scenario.
+         </li>
+
+        <li>Finally, regardless of anything in the previous parts, we have the following situation
+            for our replicas:
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>p</i><sub>1, <i>L</i></sub> contains messages 
+                <i>m</i><sub>0</sub>, <i>m</i><sub>1</sub>, and <i>m</i><sub>2</sub> and the 
+                last write went to this replica first
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>p</i><sub>1, <i>F</i>0</sub> contains messages 
+                <i>m</i><sub>0</sub> and <i>m</i><sub>1</sub>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>p</i><sub>1, <i>F</i>1</sub> contains messages 
+                <i>m</i><sub>0</sub>, <i>m</i><sub>1</sub>, and <i>m</i><sub>2</sub>.
+            <br>Suppose the broker containing <i>p</i><sub>1, <i>L</i></sub> fails. 
+                What will happen? Explain. 
+         </li>
+      </ol>
+
+
+   </body>
+
+</html>
