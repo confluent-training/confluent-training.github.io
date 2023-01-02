@@ -446,10 +446,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_course_content">Course Content</a>
-<ul class="sectlevel2">
 <li><a href="#_1_getting_started">1: Getting Started</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_why_kafka">Why Kafka?</a></li>
 <li><a href="#_one_example_use_case_ordering_food">One Example Use Case: Ordering Food</a></li>
 <li><a href="#_messages">Messages</a></li>
@@ -461,7 +459,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_2_how_are_messages_organized">2: How are Messages Organized?</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_topics_and_partitions">Topics and Partitions</a></li>
 <li><a href="#_offsetsin_kafka">Offsets&#8201;&#8212;&#8201;in Kafka</a></li>
 <li><a href="#_offsetsconsumer_offsets">Offsets&#8201;&#8212;&#8201;Consumer Offsets</a></li>
@@ -469,7 +467,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_3_how_do_i_scale_and_do_more_things_with_my_data">3: How Do I Scale and Do More Things With My Data?</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_scaling_up">Scaling Up&#8230;&#8203;</a></li>
 <li><a href="#_consumer_groups">Consumer Groups</a></li>
 <li><a href="#_multiple_consumption">Multiple Consumption</a></li>
@@ -481,7 +479,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_4_whats_going_on_inside_kafka">4: What&#8217;s Going On Inside Kafka?</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_going_deeper">Going Deeper&#8230;&#8203;</a></li>
 <li><a href="#_brokers">Brokers</a></li>
 <li><a href="#_partitions_brokers">Partitions &amp; Brokers</a></li>
@@ -494,19 +492,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_course_content">Course Content</h2>
+<h2 id="_1_getting_started">1: Getting Started</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_1_getting_started">1: Getting Started</h3>
+<details>
+<summary class="title">Commentary</summary>
+<div class="content">
+<div class="paragraph">
+<p>Let&#8217;s get started with our first lesson of the Technical Fundamentals of Apache Kafka course.</p>
+</div>
+</div>
+</details>
+<hr>
 <div style="page-break-after: always;"></div>
-<div class="sect3">
-<h4 id="_why_kafka">Why Kafka?</h4>
+<div class="sect2">
+<h3 id="_why_kafka">Why Kafka?</h3>
 <div class="paragraph">
 <p>In a nutshell&#8230;&#8203;</p>
 </div>
@@ -566,8 +569,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_one_example_use_case_ordering_food">One Example Use Case: Ordering Food</h4>
+<div class="sect2">
+<h3 id="_one_example_use_case_ordering_food">One Example Use Case: Ordering Food</h3>
 <div class="paragraph">
 <p>Suppose we are building a system for a restaurant chain:</p>
 </div>
@@ -600,15 +603,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>So, imagine you&#8217;re building a system to support ordering food via an app&#8201;&#8212;&#8201;or maybe a kiosk at the front of the restaurant you see when you walk in. You place an order there. It enters the system. Something happens and an order slip is printed out for the folks in the back to make your food or put your order together. Not long after that, your order is ready to go!</p>
 </div>
 <div class="paragraph">
-<p>Beyond you getting your order promptly, there might be other interest in the data. The manager of the restaurant probably wants to know what is being used up and needs to be reordered later. Some other process can be looking at the orders and saying &#8230;&#8203; for example, mid-afternoon&#8230;&#8203; during the lunch rush, we used up a lot of fries and probably need more before dinner time. Another process can be looking for things like this and automate having another shipment of fries arrive to location 372 before dinner so that you&#8217;re never "out" of anything. All of this can be happening automatically with your data once it&#8217;s in Kafka.</p>
+<p>Beyond you getting your order promptly, there might be other interest in the data. The manager of the restaurant probably wants to know what is being used up and needs to be reordered later. Some other process can be looking at the orders, for example, mid-afternoon, and saying that during the lunch rush, we used up a lot of fries and probably need more before dinner time. Another process can be looking for things like this and automate having another shipment of fries arrive to location 372 before dinner so that you&#8217;re never "out" of anything. All of this can be happening automatically with your data once it&#8217;s in Kafka and you&#8217;ve programmed the correct processes.</p>
 </div>
 </div>
 </details>
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_messages">Messages</h4>
+<div class="sect2">
+<h3 id="_messages">Messages</h3>
 <div class="paragraph">
 <p>The atomic unit of Kafka is a <strong>message</strong> or <strong>record</strong> or <strong>event</strong></p>
 </div>
@@ -624,21 +627,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>So, let&#8217;s learn some of the language you need to know.</p>
 </div>
 <div class="paragraph">
-<p>The most basic thing to know about is a message. This is the smallest "chunk" of data you have have in Kafka&#8201;&#8212;&#8201;and it might be a single person&#8217;s order&#8201;&#8212;&#8201;or a single customer or menu item. You&#8217;ll hear messages also called records or events. Whichever of these terms you hear or use, they&#8217;re really all the same thing.</p>
+<p>The most basic thing to know about is a <strong>message</strong>. This is the smallest "chunk" of data you have have in Kafka. It might be a single person&#8217;s order&#8201;&#8212;&#8201;or a single customer or menu item. You&#8217;ll hear messages also called <strong>records</strong> or <strong>events</strong>. Whichever of these terms you hear or use, they&#8217;re really all the same thing.</p>
 </div>
 <div class="paragraph">
 <p>For the idea of real-time processing, the idea of an event really makes sense. Focusing on one of those examples, my lunch order is really an event. And, as we really want to push the idea of data in motion, we&#8217;re most often using the term "event" these days.</p>
 </div>
 <div class="paragraph">
-<p>And, simply put, an event contains two things: a key and a value. The value is the data of the event. The key is technically not needed, but it is really important for a lot of things with how messages get stored, so we&#8217;re going to work from the start with the good practice of always associating keys with every message.</p>
+<p>And, simply put, an event contains two things: a <strong>key</strong> and a <strong>value</strong>. The value is the data of the event. The key is technically not needed, but it is really important for a lot of things with how messages get stored, so we&#8217;re going to work from the start with the good practice of always associating keys with every message.</p>
 </div>
 </div>
 </details>
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_topics">Topics</h4>
+<div class="sect2">
+<h3 id="_topics">Topics</h3>
 <div class="paragraph">
 <p>Messages are organized in logical groups called <strong>topics</strong>.</p>
 </div>
@@ -665,24 +668,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>Okay, so the next thing is how we group our messages. Every message is part of a logical group called a topic.</p>
+<p>Okay, so the next thing is how we group our messages. Every message is part of a logical group called a <strong>topic</strong>.</p>
 </div>
 <div class="paragraph">
-<p>In our example, all of the messages that are people&#8217;s orders live in one topic&#8201;&#8212;&#8201;we&#8217;ll call it orders. They all represent the same kind of information.</p>
+<p>In our example, all of the messages that are people&#8217;s orders live in one topic&#8201;&#8212;&#8201;we&#8217;ll call it <code>orders</code>. They all represent the same kind of information.</p>
 </div>
 <div class="paragraph">
 <p>We could have topics for other things we know about - such as individual menu items, customers, or restaurants.</p>
 </div>
 <div class="paragraph">
-<p>We&#8217;re going to focus on that orders topic and how a message gets associated with it and how it gets used&#8230;&#8203;</p>
+<p>We&#8217;re going to focus on that <code>orders</code> topic and how a message gets associated with it, as well as how it gets used&#8230;&#8203;</p>
 </div>
 </div>
 </details>
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_three_basic_components">Three Basic Components</h4>
+<div class="sect2">
+<h3 id="_three_basic_components">Three Basic Components</h3>
 <div class="paragraph">
 <p>Let&#8217;s start simple - with an <strong>orders</strong> topic in place in Kafka, a producer, and a consumer:</p>
 </div>
@@ -695,7 +698,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>So, here we see a picture with a Kafka cluster where our data will live. In it, that green box represents the orders topic I just talked about. All of our orders will live there, or, more accurately, move through there.</p>
+<p>So, here we see a picture with a Kafka cluster where our data will live. In it, that green box represents the <code>orders</code> topic we just talked about. All of our orders will live there, or, more accurately, move through there.</p>
 </div>
 <div class="paragraph">
 <p>There are two other important components to start with - a producer and a consumer&#8230;&#8203;</p>
@@ -705,8 +708,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_life_cycle_of_a_message_producing">Life Cycle of a Message: Producing</h4>
+<div class="sect2">
+<h3 id="_life_cycle_of_a_message_producing">Life Cycle of a Message: Producing</h3>
 <div class="paragraph">
 <p>A <strong>producer</strong> prepares messages and publishes them to Kafka.</p>
 </div>
@@ -722,18 +725,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>So let&#8217;s see how a message travels though all of these components. We&#8217;re going to start here with a series of simple illustrations we&#8217;ll refine as we go.</p>
 </div>
 <div class="paragraph">
-<p>Here on the left, the purple box represents a producer. A producer is an application that will prepare our messages, so that little orange box will represent a message our producer is getting ready. Let&#8217;s say it contains your lunch order.</p>
+<p>Here on the left, the purple box represents a <strong>producer</strong>. A producer is an application that will prepare our messages, so that little orange box will represent a message our producer is getting ready. Let&#8217;s say it contains your lunch order.</p>
 </div>
 <div class="paragraph">
-<p>The producer will say that the message is going to orders topic, and then send it off to Kafka. Or, to use different words, we might say the producer will publish the message with your lunch order to the <code>orders</code> topic.</p>
+<p>The producer will say that the message is going to <code>orders</code> topic, and then send it off to Kafka. Or, to use different words, we might say the producer will publish the message with your lunch order to the <code>orders</code> topic.</p>
 </div>
 </div>
 </details>
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_life_cycle_of_a_message_kafka">Life Cycle of a Message: Kafka</h4>
+<div class="sect2">
+<h3 id="_life_cycle_of_a_message_kafka">Life Cycle of a Message: Kafka</h3>
 <div class="paragraph">
 <p>Produced messages live in Kafka, organized by topic.</p>
 </div>
@@ -746,15 +749,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>Here we switch over to Kafka. Our producer said our message was to go to the orders topic, and indeed, here you see that message living within the orders topic in Kafka. It&#8217;s there, waiting for someone to do something with it&#8230;&#8203;</p>
+<p>Here we switch over to Kafka. Our producer said our message was to go to the <code>orders</code> topic, and indeed, here you see that message living within the <code>orders</code> topic in Kafka. It&#8217;s there, waiting for someone to do something with it&#8230;&#8203;</p>
 </div>
 </div>
 </details>
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_life_cycle_of_a_message_consumption">Life Cycle of a Message: Consumption</h4>
+<div class="sect2">
+<h3 id="_life_cycle_of_a_message_consumption">Life Cycle of a Message: Consumption</h3>
 <div class="paragraph">
 <p>Consumers subscribe to topics in Kafka and poll for new messages.</p>
 </div>
@@ -767,13 +770,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>&#8230;&#8203;and that "someone" will be a consumer. The blue box on the right represents a consumer. It will get the message with your lunch order and decide what to do with it. (Hopefully, it&#8217;ll do something like print out your order for the kitchen so you can get your food soon.)</p>
+<p>&#8230;&#8203;and that "someone" will be a <strong>consumer</strong>. The blue box on the right represents a consumer. It will get the message with your lunch order and decide what to do with it. (Hopefully, it&#8217;ll do something like print out your order for the kitchen so that you can get your food soon.)</p>
 </div>
 <div class="paragraph">
-<p>To be a little more specific, not every consumer gets every message. Consumers must say what topics they&#8217;re interested in. We call this subscribing to topics, so this blue consumer has to be subscribed to the orders topic for this to happen.</p>
+<p>To be a little more specific, not every consumer gets every message. Consumers must say what topics they&#8217;re interested in. We call this <strong>subscribing</strong> to topics, so this blue consumer has to be subscribed to the orders topic for this to happen.</p>
 </div>
 <div class="paragraph">
-<p>You might have heard of the idea of a pub-sub architecture - or publish/subscribe. Now that you&#8217;ve seen that producers publish messages and consumers subscribe to topics to get messages, hopefully you can see that Kafka fits this.</p>
+<p>You might have heard of the idea of a "pub-sub architecture" - or "publish/subscribe." Now that you&#8217;ve seen that producers publish messages and consumers subscribe to topics to get messages, hopefully you can see that Kafka fits this.</p>
 </div>
 <div class="paragraph">
 <p>So&#8230;&#8203; that&#8217;s the basic story of messages, topics, producers, and consumers&#8201;&#8212;&#8201;and that&#8217;s this first lesson! Check out the next lesson to find out some more important details about how messages are organized in Kafka.</p>
@@ -783,13 +786,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <hr>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_2_how_are_messages_organized">2: How are Messages Organized?</h3>
+</div>
+<div class="sect1">
+<h2 id="_2_how_are_messages_organized">2: How are Messages Organized?</h2>
+<div class="sectionbody">
 <details>
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>If you watched the first lesson of our Technical Fundamentals of Apache Kafka course, you know the basics of messages, topics, producers, and consumers.</p>
+<p>From the first lesson of our Technical Fundamentals of Apache Kafka course, you know the basics of messages, topics, producers, and consumers.</p>
 </div>
 <div class="paragraph">
 <p>Specifically, you know we have topics, but it&#8217;s important for you to learn a bit more about how messages are organized within topics. So let&#8217;s get into that&#8230;&#8203;</p>
@@ -798,8 +803,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </details>
 <hr>
 <div style="page-break-after: always;"></div>
-<div class="sect3">
-<h4 id="_topics_and_partitions">Topics and Partitions</h4>
+<div class="sect2">
+<h3 id="_topics_and_partitions">Topics and Partitions</h3>
 <div class="paragraph">
 <p>Topics are broken down into <strong>partitions</strong></p>
 </div>
@@ -815,13 +820,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>We know topics are groups of messages, but we have the ability to break down topics into partitions.</p>
+<p>We know topics are groups of messages, but we have the ability to break down topics into <strong>partitions</strong>.</p>
 </div>
 <div class="paragraph">
 <p>In fact, every topic must have one partition, so let&#8217;s refine our earlier picture to show our orders topic to have one partition, the simplest situation that is possible.</p>
 </div>
 <div class="paragraph">
-<p>You&#8217;ll notice that this partition is labeled partition 0 - as we computer-science-minded folks like to do; indeed, we&#8217;ll always start counting from 0. And, you&#8217;ll notice that our orange message lives within this partition.</p>
+<p>You&#8217;ll notice that this partition is labeled partition <code>0</code> - as we computer-science-minded folks like to do; indeed, we&#8217;ll always start counting from 0. And, you&#8217;ll notice that our orange message lives within this partition.</p>
 </div>
 <div class="paragraph">
 <p>So then, we could more accurately say that every message lives not only within a topic, but within a partition of a topic. And while we can say that partitions form logical subsets of topics, we can say they are physical groupings as well. (We&#8217;ll get into that physical aspect later, in Lesson 4.)</p>
@@ -831,8 +836,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_offsetsin_kafka">Offsets&#8201;&#8212;&#8201;in Kafka</h4>
+<div class="sect2">
+<h3 id="_offsetsin_kafka">Offsets&#8201;&#8212;&#8201;in Kafka</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -855,18 +860,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>We also need to know where each message is within a partition, so we have these things called offsets to keep track of that.</p>
 </div>
 <div class="paragraph">
-<p>We put the first message at offset 0 in a partition. We put the second message at offset 1. And so forth.</p>
+<p>We put the first message at offset <code>0</code> in a partition. We put the second message at offset <code>1</code>. And so forth.</p>
 </div>
 <div class="paragraph">
-<p>In this picture, you see that we have a total of 6 messages stored, at offsets 0 through 5. The partition&#8217;s machinery knows that the next message will go to offset 6. And, in general, when a new message arrives to a given partition, it will be automatically written at that next offset.</p>
+<p>In this picture, you see that we have a total of 6 messages stored, at offsets <code>0</code> through <code>5</code>. The partition&#8217;s machinery knows that the next message will go to offset <code>6</code>. And, in general, when a new message arrives to a given partition, it will be automatically written at that next offset.</p>
 </div>
 </div>
 </details>
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_offsetsconsumer_offsets">Offsets&#8201;&#8212;&#8201;Consumer Offsets</h4>
+<div class="sect2">
+<h3 id="_offsetsconsumer_offsets">Offsets&#8201;&#8212;&#8201;Consumer Offsets</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -898,7 +903,7 @@ In this picture, the consumer has last read the message at offset 3.
 <p>So, every message has an offset within a partition and this helps organize how the messages are stored. But how do the consumers know where they are reading? They have to keep track of their positions too.</p>
 </div>
 <div class="paragraph">
-<p>So they do - via something called consumer offsets. Say our consumer knows to read the message at offset 3 in partition 0 of orders. It will do exactly that, and when it&#8217;s done, it will advance its consumer offset to 4. Next time our consumer goes to read, it will read the message at offset 4. In the picture, you see the consumer offset at this point, after the consumer has read the message at offset 3 and is ready to read the message at offset 4.</p>
+<p>So they do - via something called <strong>consumer offsets</strong>. Say our consumer knows to read the message at offset <code>3</code> in partition <code>0</code> of <code>orders</code>. It will do exactly that, and when it&#8217;s done, it will advance its consumer offset to <code>4</code>. Next time our consumer goes to read, it will read the message at offset <code>4</code>. In the picture, you see the consumer offset at this point, after the consumer has read the message at offset <code>3</code> and is ready to read the message at offset <code>4</code>.</p>
 </div>
 <div class="paragraph">
 <p>I like to say that consumer offsets are like bookmarks. Say I&#8217;m reading a book, have finished page 15, and it&#8217;s time to take a break. I&#8217;ll probably want to know where I left off next time I pick up the book, so I&#8217;ll grab a bookmark, flip the page, and put my bookmark at page 16. I imagine many of you would do the same. The consumer offset is simply a consumer putting a bookmark in the partition it is reading.</p>
@@ -908,8 +913,8 @@ In this picture, the consumer has last read the message at offset 3.
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_check_your_knowledge">Check Your Knowledge!</h4>
+<div class="sect2">
+<h3 id="_check_your_knowledge">Check Your Knowledge!</h3>
 <div class="paragraph">
 <p>Try a <a href="https://forms.gle/Zmu2doLu8knXtCmy6" target="_blank" rel="noopener">quick quiz on Lessons 1 and 2</a>.</p>
 </div>
@@ -917,30 +922,20 @@ In this picture, the consumer has last read the message at offset 3.
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>All right. That&#8217;s all I wanted to tell you about message organization. I have more to tell you, but I&#8217;d like to encourage you to take a break before you go on and take a quick quiz to check what you&#8217;ve learned so far.</p>
+<p>This concludes the content on message organization. Before going on, you are encouraged to take a break and take a quick quiz to check what you&#8217;ve learned so far&#8201;&#8212;&#8201;via the link above.</p>
 </div>
 <div class="paragraph">
-<p>[Cmd+2] Here&#8217;s what it looks like.</p>
-</div>
-<div class="paragraph">
-<p>If you&#8217;re viewing this On Demand via our website, you&#8217;ll find the link to the quiz next in your learning path. If you&#8217;re viewing this via YouTube, you&#8217;ll find the link to the quiz down below in the description.</p>
-</div>
-<div class="paragraph">
-<p>Either way, the quiz is powered by Google Forms, it&#8217;s quick, and it&#8217;s anonymous. You&#8217;ll instantly get feedback when you click the submit button.</p>
-</div>
-<div class="paragraph">
-<p>Check it out, and then join me for the third lesson, where we&#8217;ll learn how to get more powerful.</p>
-</div>
-<div class="paragraph">
-<p>Cmd+1</p>
+<p>The quiz is powered by Google Forms, it&#8217;s quick, and it&#8217;s anonymous. You&#8217;ll instantly get feedback when you click the submit button.</p>
 </div>
 </div>
 </details>
 <hr>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_3_how_do_i_scale_and_do_more_things_with_my_data">3: How Do I Scale and Do More Things With My Data?</h3>
+</div>
+<div class="sect1">
+<h2 id="_3_how_do_i_scale_and_do_more_things_with_my_data">3: How Do I Scale and Do More Things With My Data?</h2>
+<div class="sectionbody">
 <details>
 <summary class="title">Commentary</summary>
 <div class="content">
@@ -951,8 +946,8 @@ In this picture, the consumer has last read the message at offset 3.
 </details>
 <hr>
 <div style="page-break-after: always;"></div>
-<div class="sect3">
-<h4 id="_scaling_up">Scaling Up&#8230;&#8203;</h4>
+<div class="sect2">
+<h3 id="_scaling_up">Scaling Up&#8230;&#8203;</h3>
 <div class="paragraph">
 <p>So far, we have seen&#8230;&#8203;</p>
 </div>
@@ -996,8 +991,8 @@ In this picture, the consumer has last read the message at offset 3.
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_consumer_groups">Consumer Groups</h4>
+<div class="sect2">
+<h3 id="_consumer_groups">Consumer Groups</h3>
 <div class="paragraph">
 <p>Consumers exist in <strong>consumer groups</strong></p>
 </div>
@@ -1036,8 +1031,8 @@ In this picture, the consumer has last read the message at offset 3.
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_multiple_consumption">Multiple Consumption</h4>
+<div class="sect2">
+<h3 id="_multiple_consumption">Multiple Consumption</h3>
 <div class="paragraph">
 <p>Could have multiple groups using the same data&#8230;&#8203;</p>
 </div>
@@ -1063,8 +1058,8 @@ In this picture, the consumer has last read the message at offset 3.
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_multiple_partitions">Multiple Partitions</h4>
+<div class="sect2">
+<h3 id="_multiple_partitions">Multiple Partitions</h3>
 <div class="paragraph">
 <p>In practice, we want topics to have multiple partitions.</p>
 </div>
@@ -1090,8 +1085,8 @@ In this picture, the consumer has last read the message at offset 3.
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_consuming_from_multiple_partitions">Consuming from Multiple Partitions</h4>
+<div class="sect2">
+<h3 id="_consuming_from_multiple_partitions">Consuming from Multiple Partitions</h3>
 <div class="paragraph">
 <p>Now our consumers can consume in parallel:</p>
 </div>
@@ -1130,8 +1125,8 @@ In this picture, the consumer has last read the message at offset 3.
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_expanding_the_last_picture">Expanding the Last Picture</h4>
+<div class="sect2">
+<h3 id="_expanding_the_last_picture">Expanding the Last Picture</h3>
 <div class="imageblock">
 <div class="content">
 <img src="images/fun-revamp-images-ex-copy/fig3-5.svg" alt="Same graphic as before, but with inventory consumer group with consumer 3 and consumer 4 added again. Offsets arrows for the inventory consumer group members are added: consumer 3 has consumer offset 2 in partition 0 and consumer offset 1 in partition 1, while consumer 4 has consumer offset 1 in partition 2.">
@@ -1157,8 +1152,8 @@ In this picture, the consumer has last read the message at offset 3.
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_how_do_messages_get_partitioned">How Do Messages Get Partitioned?</h4>
+<div class="sect2">
+<h3 id="_how_do_messages_get_partitioned">How Do Messages Get Partitioned?</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1189,8 +1184,8 @@ In this picture, the consumer has last read the message at offset 3.
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_scaling_is_easy">Scaling is Easy!</h4>
+<div class="sect2">
+<h3 id="_scaling_is_easy">Scaling is Easy!</h3>
 <div class="paragraph">
 <p>Say you want to</p>
 </div>
@@ -1248,8 +1243,10 @@ More on how all of this works in both our Developer and Administrator training!
 <hr>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_4_whats_going_on_inside_kafka">4: What&#8217;s Going On Inside Kafka?</h3>
+</div>
+<div class="sect1">
+<h2 id="_4_whats_going_on_inside_kafka">4: What&#8217;s Going On Inside Kafka?</h2>
+<div class="sectionbody">
 <details>
 <summary class="title">Commentary</summary>
 <div class="content">
@@ -1260,8 +1257,8 @@ More on how all of this works in both our Developer and Administrator training!
 </details>
 <hr>
 <div style="page-break-after: always;"></div>
-<div class="sect3">
-<h4 id="_going_deeper">Going Deeper&#8230;&#8203;</h4>
+<div class="sect2">
+<h3 id="_going_deeper">Going Deeper&#8230;&#8203;</h3>
 <div class="paragraph">
 <p>Now let&#8217;s learn about some more details about a Kafka cluster, especially <em>physical</em> things&#8230;&#8203;
 .Commentary</p>
@@ -1277,8 +1274,8 @@ More on how all of this works in both our Developer and Administrator training!
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_brokers">Brokers</h4>
+<div class="sect2">
+<h3 id="_brokers">Brokers</h3>
 <div class="paragraph">
 <p>A Kafka cluster consists of multiple <strong>brokers</strong></p>
 </div>
@@ -1307,8 +1304,8 @@ More on how all of this works in both our Developer and Administrator training!
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_partitions_brokers">Partitions &amp; Brokers</h4>
+<div class="sect2">
+<h3 id="_partitions_brokers">Partitions &amp; Brokers</h3>
 <div class="paragraph">
 <p>Partitions are really <strong>physical</strong> groupings of the messages in topics.</p>
 </div>
@@ -1334,8 +1331,8 @@ More on how all of this works in both our Developer and Administrator training!
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_partitions_brokers_2">Partitions &amp; Brokers (2)</h4>
+<div class="sect2">
+<h3 id="_partitions_brokers_2">Partitions &amp; Brokers (2)</h3>
 <table class="tableblock frame-none grid-none stripes-even stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1371,8 +1368,8 @@ More on how all of this works in both our Developer and Administrator training!
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_what_if_a_broker_goes_down">What if a Broker Goes Down?</h4>
+<div class="sect2">
+<h3 id="_what_if_a_broker_goes_down">What if a Broker Goes Down?</h3>
 <table class="tableblock frame-none grid-none stripes-even stretch">
 <colgroup>
 <col style="width: 60%;">
@@ -1433,8 +1430,8 @@ More on how all of this works in both our Developer and Administrator training!
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_serialization_and_deserialization">Serialization and Deserialization</h4>
+<div class="sect2">
+<h3 id="_serialization_and_deserialization">Serialization and Deserialization</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1465,8 +1462,8 @@ More on how all of this works in both our Developer and Administrator training!
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_immutable_messages">Immutable Messages</h4>
+<div class="sect2">
+<h3 id="_immutable_messages">Immutable Messages</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1491,8 +1488,8 @@ More on how all of this works in both our Developer and Administrator training!
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_but_we_dont_keep_messages_forever">&#8230;&#8203;But We Don&#8217;t Keep Messages Forever&#8230;&#8203;</h4>
+<div class="sect2">
+<h3 id="_but_we_dont_keep_messages_forever">&#8230;&#8203;But We Don&#8217;t Keep Messages Forever&#8230;&#8203;</h3>
 <div class="paragraph">
 <p>Control which messages stay in Kafka via a <strong>retention policy</strong>:</p>
 </div>
@@ -1591,8 +1588,8 @@ Partitions are divided into segments, which affect both retention policies.
 <hr>
 <div style="page-break-after: always;"></div>
 </div>
-<div class="sect3">
-<h4 id="_check_your_knowledge_2">Check Your Knowledge!</h4>
+<div class="sect2">
+<h3 id="_check_your_knowledge_2">Check Your Knowledge!</h3>
 <div class="paragraph">
 <p>Try a <a href="https://forms.gle/FhJXvtSLCLHmT7Np9" target="_blank" rel="noopener">quick quiz on Lessons 3 and 4</a>.</p>
 </div>
@@ -1624,11 +1621,10 @@ Partitions are divided into segments, which affect both retention policies.
 </div>
 </div>
 </div>
-</div>
 <div id="footer">
 <div id="footer-text">
 Version 7.0.0-v1.0.3<br>
-Last updated 2023-01-02 18:37:33 UTC
+Last updated 2023-01-02 22:20:27 UTC
 </div>
 </div>
 </body>
