@@ -556,7 +556,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>So, I am going to talk about one particular use case and use this one to frame a lot of the ideas as we go.</p>
 </div>
 <div class="paragraph">
-<p>It used to be that when it was time to order your lunch at a restaurant, that was all a manual process: you told someone what you wanted, they told the kitchen, someone made it, etc. More and more, computers are getting involved, and, especially these days, we&#8217;re doing a lot of ordering via apps. I know that over the last few years, I&#8217;ve personally ordered a lot more food via delivery apps than I ever had before!</p>
+<p>It used to be that when it was time to order your lunch at a restaurant, that was all a manual process: you told someone what you wanted, they told the kitchen, someone made it, etc. More and more, computers are getting involved, and, especially these days, we&#8217;re doing a lot of ordering via apps.</p>
 </div>
 <div class="paragraph">
 <p>So, imagine you&#8217;re building a system to support ordering food via an app&#8201;&#8212;&#8201;or maybe a kiosk at the front of the restaurant you see when you walk in. You place an order there. It enters the system. Something happens and an order slip is printed out for the folks in the back to make your food or put your order together. Not long after that, your order is ready to go!</p>
@@ -865,7 +865,7 @@ In this picture, the consumer has last read the message at offset 3.
 <p>So they do - via something called <strong>consumer offsets</strong>. Say our consumer knows to read the message at offset <code>3</code> in partition <code>0</code> of <code>orders</code>. It will do exactly that, and when it&#8217;s done, it will advance its consumer offset to <code>4</code>. Next time our consumer goes to read, it will read the message at offset <code>4</code>. In the picture, you see the consumer offset at this point, after the consumer has read the message at offset <code>3</code> and is ready to read the message at offset <code>4</code>.</p>
 </div>
 <div class="paragraph">
-<p>I like to say that consumer offsets are like bookmarks. Say I&#8217;m reading a book, have finished page 15, and it&#8217;s time to take a break. I&#8217;ll probably want to know where I left off next time I pick up the book, so I&#8217;ll grab a bookmark, flip the page, and put my bookmark at page 16. I imagine many of you would do the same. The consumer offset is simply a consumer putting a bookmark in the partition it is reading.</p>
+<p>We could say that consumer offsets are like bookmarks. Say you&#8217;re reading a book, have finished page 15, and it&#8217;s time to take a break. You&#8217;ll probably want to know where you left off next time you pick up the book, so you might grab a bookmark, flip the page, and put your bookmark at page 16. The consumer offset is simply a consumer putting a bookmark in the partition it is reading.</p>
 </div>
 </div>
 </details>
@@ -983,7 +983,7 @@ In this picture, the consumer has last read the message at offset 3.
 <p>The first thing to know is that all the consumers in a consumer group are doing the same thing. That is, they are the same application. So, let&#8217;s change our earlier picture, and instead of having just one consumer processing orders, let&#8217;s have 3, and let&#8217;s put them in a group. You can see this above now.</p>
 </div>
 <div class="paragraph">
-<p>What distinguishes the consumers in a group is that they are using different data. Put differently, they&#8217;re working as a team to process data. How is this possible? I&#8217;ll tell you, but first&#8230;&#8203;</p>
+<p>What distinguishes the consumers in a group is that they are using different data. Put differently, they&#8217;re working as a team to process data. How is this possible? We&#8217;ll get into exactly how, but first&#8230;&#8203;</p>
 </div>
 </div>
 </details>
@@ -1524,6 +1524,11 @@ Partitions are divided into segments, which affect both retention policies.
 <div class="paragraph">
 <p>All right - one last important thing. Yes, you cannot change a message, but that doesn&#8217;t mean messages stay in Kafka forever. Back to that idea that we use Kafka to process data in motion. So, there must be some way of controlling how long messages stay in Kafka. And there is. We call that a retention policy.</p>
 </div>
+</div>
+</details>
+<details>
+<summary class="title">Commentary: Deletion (left column)</summary>
+<div class="content">
 <div class="paragraph">
 <p>The simplest retention policy is to delete messages based solely on their age. This the most common use of the deletion retention policy, and it&#8217;s set up by default to delete messages older than 7 days.</p>
 </div>
@@ -1533,6 +1538,11 @@ Partitions are divided into segments, which affect both retention policies.
 <div class="paragraph">
 <p>In our restaurant order processing example, getting the orders processed is the most important thing, but keeping them around longer enables things like inventory or analysis. If 7 days doesn&#8217;t suit you, you can tune that threshold.</p>
 </div>
+</div>
+</details>
+<details>
+<summary class="title">Commentary: Compaction (right column)</summary>
+<div class="content">
 <div class="paragraph">
 <p>On the right, there&#8217;s a little taste of the other major retention policy: compaction. This one only cares about keys. It applies in use cases where keeping older values of a key doesn&#8217;t make sense. This works nicely for things like tracking the state of an online shopping order.</p>
 </div>
@@ -1586,7 +1596,7 @@ Partitions are divided into segments, which affect both retention policies.
 <div id="footer">
 <div id="footer-text">
 Version 7.0.0-v1.0.3<br>
-Last updated 2023-01-02 22:34:05 UTC
+Last updated 2023-01-02 23:10:18 UTC
 </div>
 </div>
 </body>
