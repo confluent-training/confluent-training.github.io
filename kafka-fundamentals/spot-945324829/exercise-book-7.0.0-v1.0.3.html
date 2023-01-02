@@ -446,51 +446,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_1_getting_started">1: Getting Started</a>
-<ul class="sectlevel2">
-<li><a href="#_why_kafka">Why Kafka?</a></li>
-<li><a href="#_one_example_use_case_ordering_food">One Example Use Case: Ordering Food</a></li>
-<li><a href="#_messages">Messages</a></li>
-<li><a href="#_topics">Topics</a></li>
-<li><a href="#_three_basic_components">Three Basic Components</a></li>
-<li><a href="#_life_cycle_of_a_message_producing">Life Cycle of a Message: Producing</a></li>
-<li><a href="#_life_cycle_of_a_message_kafka">Life Cycle of a Message: Kafka</a></li>
-<li><a href="#_life_cycle_of_a_message_consumption">Life Cycle of a Message: Consumption</a></li>
-</ul>
-</li>
-<li><a href="#_2_how_are_messages_organized">2: How are Messages Organized?</a>
-<ul class="sectlevel2">
-<li><a href="#_topics_and_partitions">Topics and Partitions</a></li>
-<li><a href="#_offsetsin_kafka">Offsets&#8201;&#8212;&#8201;in Kafka</a></li>
-<li><a href="#_offsetsconsumer_offsets">Offsets&#8201;&#8212;&#8201;Consumer Offsets</a></li>
-<li><a href="#_check_your_knowledge">Check Your Knowledge!</a></li>
-</ul>
-</li>
-<li><a href="#_3_how_do_i_scale_and_do_more_things_with_my_data">3: How Do I Scale and Do More Things With My Data?</a>
-<ul class="sectlevel2">
-<li><a href="#_scaling_up">Scaling Up&#8230;&#8203;</a></li>
-<li><a href="#_consumer_groups">Consumer Groups</a></li>
-<li><a href="#_multiple_consumption">Multiple Consumption</a></li>
-<li><a href="#_multiple_partitions">Multiple Partitions</a></li>
-<li><a href="#_consuming_from_multiple_partitions">Consuming from Multiple Partitions</a></li>
-<li><a href="#_expanding_the_last_picture">Expanding the Last Picture</a></li>
-<li><a href="#_how_do_messages_get_partitioned">How Do Messages Get Partitioned?</a></li>
-<li><a href="#_scaling_is_easy">Scaling is Easy!</a></li>
-</ul>
-</li>
-<li><a href="#_4_whats_going_on_inside_kafka">4: What&#8217;s Going On Inside Kafka?</a>
-<ul class="sectlevel2">
-<li><a href="#_going_deeper">Going Deeper&#8230;&#8203;</a></li>
-<li><a href="#_brokers">Brokers</a></li>
-<li><a href="#_partitions_brokers">Partitions &amp; Brokers</a></li>
-<li><a href="#_partitions_brokers_2">Partitions &amp; Brokers (2)</a></li>
-<li><a href="#_what_if_a_broker_goes_down">What if a Broker Goes Down?</a></li>
-<li><a href="#_serialization_and_deserialization">Serialization and Deserialization</a></li>
-<li><a href="#_immutable_messages">Immutable Messages</a></li>
-<li><a href="#_but_we_dont_keep_messages_forever">&#8230;&#8203;But We Don&#8217;t Keep Messages Forever&#8230;&#8203;</a></li>
-<li><a href="#_check_your_knowledge_2">Check Your Knowledge!</a></li>
-</ul>
-</li>
+<li><a href="#_1_getting_started">1: Getting Started</a></li>
+<li><a href="#_2_how_are_messages_organized">2: How are Messages Organized?</a></li>
+<li><a href="#_3_how_do_i_scale_and_do_more_things_with_my_data">3: How Do I Scale and Do More Things With My Data?</a></li>
+<li><a href="#_4_whats_going_on_inside_kafka">4: What&#8217;s Going On Inside Kafka?</a></li>
 </ul>
 </div>
 </div>
@@ -940,7 +899,7 @@ In this picture, the consumer has last read the message at offset 3.
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>Alrighty&#8201;&#8212;&#8201;welcome back - for the third lesson of our Technical Fundamentals of Apache Kafka course. From the first two lessons, you should know what producers and consumers do, as well as the ideas of topics, partitions, offsets, and consumer offsets. Let&#8217;s take it further&#8230;&#8203;</p>
+<p>Welcome to the third lesson of our Technical Fundamentals of Apache Kafka course. From the first two lessons, you should know what producers and consumers do, as well as the ideas of topics, partitions, offsets, and consumer offsets. Let&#8217;s take it further&#8230;&#8203;</p>
 </div>
 </div>
 </details>
@@ -981,7 +940,7 @@ In this picture, the consumer has last read the message at offset 3.
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>So, so far, in what we&#8217;ve seen, we&#8217;ve had one consumer and one partition. But in practice, you&#8217;ll want more. We&#8217;re going to learn about how and why here.</p>
+<p>So far, in what we&#8217;ve seen, we&#8217;ve had one consumer and one partition. But in practice, you&#8217;ll want more. We&#8217;re going to learn about how and why here.</p>
 </div>
 <div class="paragraph">
 <p>We can have multiple consumers in what we call consumer groups, and we&#8217;ll generally have multiple of those. As for the partitions themselves, we&#8217;ll almost always have multiple of them for a topic. Let&#8217;s get into it!</p>
@@ -1018,10 +977,10 @@ In this picture, the consumer has last read the message at offset 3.
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>So, we generally will put our consumers into what we call consumer groups. This allows us to deploy more consumers to get more power than just with a single consumer.</p>
+<p>So, we generally will put our consumers into what we call <strong>consumer groups</strong>. This allows us to deploy more consumers to get more power than just with a single consumer.</p>
 </div>
 <div class="paragraph">
-<p>The first thing to know is that all of the consumers in a consumer group are doing the same thing. That is, they are the same application. So, let&#8217;s change our earlier picture, and instead of having just one consumer processing orders, let&#8217;s have 3, and let&#8217;s put them in a group. You can see this on screen now.</p>
+<p>The first thing to know is that all the consumers in a consumer group are doing the same thing. That is, they are the same application. So, let&#8217;s change our earlier picture, and instead of having just one consumer processing orders, let&#8217;s have 3, and let&#8217;s put them in a group. You can see this above now.</p>
 </div>
 <div class="paragraph">
 <p>What distinguishes the consumers in a group is that they are using different data. Put differently, they&#8217;re working as a team to process data. How is this possible? I&#8217;ll tell you, but first&#8230;&#8203;</p>
@@ -1045,13 +1004,16 @@ In this picture, the consumer has last read the message at offset 3.
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>&#8230;&#8203;I want to tell you about having multiple consumer groups and why you&#8217;d want that.</p>
+<p>&#8230;&#8203;we need to talk about having multiple consumer groups and why you&#8217;d want that.</p>
 </div>
 <div class="paragraph">
 <p>You might recall in our earlier picture with a consumer reading a message, that message was still showing in the orders topic when the consumer read it. Indeed, this is true; when a consumer reads a message, it just advances its offset and leaves the message there. This allows things like having another consumer consume that message&#8201;&#8212;&#8201;to do something different with it.</p>
 </div>
 <div class="paragraph">
-<p>If all of the consumers in a group are doing the same thing, to do something different with a message that&#8217;s practical, we&#8217;d need a different consumer group. In our last picture, we had 3 consumers in a group processing orders. Now, we&#8217;ll add on a second group&#8201;&#8212;&#8201;the two orange consumers are tracking inventory. They need to see the same orders that the other group did, but for a different reason&#8201;&#8212;&#8201;perhaps some ingredients got used a lot at lunch time and these consumers can trigger a process that ships more before dinner time. I like this idea! No one likes it when you get told, "sorry, we&#8217;re out of this, this, and this on the menu"!</p>
+<p>If all the consumers in a group are doing the same thing, to do something different with a message that&#8217;s practical, we&#8217;d need a different consumer group. In our last picture, we had 3 consumers in a group processing orders.</p>
+</div>
+<div class="paragraph">
+<p>Now, we&#8217;ll add on a second group&#8201;&#8212;&#8201;the two orange consumers are tracking inventory. They need to see the same orders that the other group did, but for a different reason&#8201;&#8212;&#8201;perhaps some ingredients got used a lot at lunch time and these consumers can trigger a process that ships more before dinner time. I like this idea! No one likes it when you get told, "sorry, we&#8217;re out of this, this, and this on the menu"!</p>
 </div>
 </div>
 </details>
@@ -1075,7 +1037,7 @@ In this picture, the consumer has last read the message at offset 3.
 <p>Now, let&#8217;s bring the idea of multiple partitions into play. Instead of having just one partition for our orders topic, let&#8217;s change the picture to have 3.</p>
 </div>
 <div class="paragraph">
-<p>They&#8217;re numbered 0 to 2, consistent with our earlier idea of counting from 0.</p>
+<p>They&#8217;re numbered <code>0</code> to <code>2</code>, consistent with our earlier idea of counting from <code>0</code>.</p>
 </div>
 <div class="paragraph">
 <p>So what does this enable? Well&#8230;&#8203;</p>
@@ -1115,10 +1077,10 @@ In this picture, the consumer has last read the message at offset 3.
 <p>Now that we have 3 partitions, we can really see consumption happening in parallel. We said before that consumers subscribe to topics. More specifically, Kafka will assign each consumer a partition&#8201;&#8212;&#8201;or partitions&#8201;&#8212;&#8201;of the subscribed topics. Kafka will also take care of making sure that every partition gets assigned to one of the consumers in the group. This is important&#8201;&#8212;&#8201;nobody&#8217;s order gets missed.</p>
 </div>
 <div class="paragraph">
-<p>In essence, our consumers in the group are working together as a team to consume all of the orders. And, in our picture with the order processing  group there were three consumers. Conveniently, we have three partitions too, so each consumer is processing one partition. It&#8217;s sort of like a virtualization of if every partition were a line at the front of a restaurant and each consumer were one of the folks working a register taking orders.</p>
+<p>In essence, our consumers in the group are working together as a team to consume all the orders. And, in our picture with the order processing group there were three consumers. Conveniently, we have three partitions too, so each consumer is processing one partition. It&#8217;s sort of like a virtualization of if every partition were a line at the front of a restaurant and each consumer were one of the folks working a register taking orders.</p>
 </div>
 <div class="paragraph">
-<p>Each consumer needs to know who&#8217;s next in line, and does that with a consumer offset. Notice in the picture that there&#8217;s an arrow from every consumer to a specific offset in an assigned partition. The arrow points to that consumer&#8217;s offset in that partition. So Consumer 0 has presumably processed the orders at offsets 0 through 4 in partition 0 and is ready to take process the order at offset 5. And consumer 1 has taken one customer&#8217;s order in Partition 1. Partition 2 is effectively the line you want to get in when you go into the restaurant. The assigned consumer, consumer 2, has processed all of the orders and has its consumer offset set at 5, ready to process the next order that arrives.</p>
+<p>Each consumer needs to know who&#8217;s next in line, and does that with a consumer offset. Notice in the picture that there&#8217;s an arrow from every consumer to a specific offset in an assigned partition. The arrow points to that consumer&#8217;s offset in that partition. So consumer 0 has presumably processed the orders at offsets <code>0</code> through <code>4</code> in partition 0 and is ready to take process the order at offset <code>5</code>. And consumer 1 has taken one customer&#8217;s order in partition 1. Partition 2 is effectively the line you want to get in when you go into the restaurant. The assigned consumer, consumer 2, has processed all the orders and has its consumer offset set at <code>5</code>, ready to process the next order that arrives.</p>
 </div>
 </div>
 </details>
@@ -1136,16 +1098,16 @@ In this picture, the consumer has last read the message at offset 3.
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>So, for completeness, let&#8217;s add some more into that picture. You&#8217;ll see the same picture as before, but this time I have the inventory consumer group too.</p>
+<p>For completeness, let&#8217;s add some more into that picture. You&#8217;ll see the same picture as before, but this time the inventory consumer group is showing too.</p>
 </div>
 <div class="paragraph">
-<p>A difference is that there are just 2 consumers in this group. But every order&#8201;&#8212;&#8201;in all of 3 partitions&#8201;&#8212;&#8201;has to get counted in inventory. With 2 consumers and 3 partitions, that means that one of those consumers is going to have to be processing 2 partitions.</p>
+<p>A difference is that there are just 2 consumers in this group. But every order&#8201;&#8212;&#8201;in all three partitions&#8201;&#8212;&#8201;has to get counted in inventory. With two consumers and three partitions, that means that one of those consumers is going to have to be processing two partitions.</p>
 </div>
 <div class="paragraph">
-<p>Notice also that there are offsets from EACH consumer to each assigned partition. Consumer 3 is processing 2 partitions, but it&#8217;s at offset 2 in partition 0 and offset 1 in partition 1.</p>
+<p>Notice also that there are offsets from <em>each</em> consumer to each assigned partition. Consumer 3 is processing two partitions, but it&#8217;s at offset <code>2</code> in partition 0 and offset <code>1</code> in partition 1.</p>
 </div>
 <div class="paragraph">
-<p>Also, if we look at partition 2, we see the two different consumers are at different places. That&#8217;s pretty likely, and this is probably the natural situation you&#8217;d expect. Consumer 2, processing orders, is a couple orders ahead of consumer 4, who&#8217;s is tallying those orders for inventory. But nothing says it has to be this way. The consumers in the different groups are totally independent. So you see&#8201;&#8212;&#8201;intentionally&#8201;&#8212;&#8201;an example of this with Partition 0, where the inventory-tracking consumer is an order ahead of the order-processing consumer.</p>
+<p>Also, if we look at partition 2, we see the two different consumers are at different places. That&#8217;s pretty likely, and this is probably the natural situation you&#8217;d expect. Consumer 2, processing orders, is a couple orders ahead of consumer 4, who is tallying those orders for inventory. But nothing says it has to be this way. The consumers in the different groups are totally independent. So you see&#8201;&#8212;&#8201;intentionally&#8201;&#8212;&#8201;an example of this with partition 0, where the inventory-tracking consumer is an order ahead of the order-processing consumer.</p>
 </div>
 </div>
 </details>
@@ -1171,13 +1133,13 @@ In this picture, the consumer has last read the message at offset 3.
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>I bet some of you are wondering just how the messages get to the partitions. In fact, when I do this course for a live audience, there&#8217;s about a 50/50 chance someone has stopped me to ask that question by now. Let me answer that for you!</p>
+<p>You may be wondering just how the messages get to the partitions.</p>
 </div>
 <div class="paragraph">
-<p>Remember, it is the producers who send the messages, and it is actually the producer&#8217;s job to decide the partition. There are different ways this can happen, but in almost all cases, the producer is running a process called a paritioner to make this decision. And, here, we&#8217;ll just talk about the default parititoner.</p>
+<p>Remember, it is the producers who send the messages, and it is actually the producer&#8217;s job to decide the partition. There are different ways this can happen, but in almost all cases, the producer is running a process called a partitioner to make this decision. And, here, we&#8217;ll just talk about the default partitioner.</p>
 </div>
 <div class="paragraph">
-<p>Remember, we count from 0 in indexing partitions, so if you had 5 partitions, they would be indexed 0 to 4. The first thing the default partitioner does is run the key through a hash function. This more or less mixes up the inputs (and makes them numeric if needed), but, as it is a function, running the same key through the hash function will always give the same output. But we also have to have a result smaller than the number of partitions, so dividing by that number and keeping the remainder achieves that. You&#8217;ll see this shown with the modulus operator on your screen.</p>
+<p>Remember, we count from <code>0</code> in indexing partitions, so if you had five partitions, they would be indexed <code>0</code> to <code>4</code>. The first thing the default partitioner does is run the key through a hash function. This more or less mixes up the inputs (and makes them numeric if needed), but, as it is a function, running the same key through the hash function will always give the same output. But, we also have to have a result smaller than the number of partitions, so dividing by that number and keeping the remainder achieves that. You&#8217;ll see this shown with the modulus operator above.</p>
 </div>
 </div>
 </details>
@@ -1230,13 +1192,13 @@ More on how all of this works in both our Developer and Administrator training!
 <p>What&#8217;s nice about this is that Kafka is watching for changes in how many consumers are in groups, and if it detects a change, it will automatically reassign consumers to partitions.</p>
 </div>
 <div class="paragraph">
-<p>This is great for helping you get parallelism, but if you have 4 partitions, you can&#8217;t have more than 4 consumers processing them at once. But, you can also increase the number of parititons, and if you did, this also would cause Kafka to automatically move around the assignments of consumers to partitions. We call this rebalancing.</p>
+<p>This is great for helping you get parallelism, but if you have four partitions, you can&#8217;t have more than four consumers processing them at once. However, you can also increase the number of parititons, and if you did, this also would cause Kafka to automatically move around the assignments of consumers to partitions. We call this rebalancing.</p>
 </div>
 <div class="paragraph">
-<p>And, it&#8217;s pretty big deal and there&#8217;s a lot to understand to really get all the details, but that&#8217;s all you need to know for now! We go much much deeper into this concept in both of our Developer and Administration courses - from different perspectives.</p>
+<p>And, it&#8217;s pretty big deal and there&#8217;s a lot to understand to really get all the details, but that&#8217;s all you need to know for now! We go much, much deeper into this concept in both of our Developer and Administration courses - from different perspectives.</p>
 </div>
 <div class="paragraph">
-<p>With that, we&#8217;re done with our logical view of how partitions and consumers work. Join me for the next lesson to learn about some of the physical matters.</p>
+<p>With that, we&#8217;re done with our logical view of how partitions and consumers work. In the next lesson, we get into some of the physical matters.</p>
 </div>
 </div>
 </details>
@@ -1624,7 +1586,7 @@ Partitions are divided into segments, which affect both retention policies.
 <div id="footer">
 <div id="footer-text">
 Version 7.0.0-v1.0.3<br>
-Last updated 2023-01-02 22:20:27 UTC
+Last updated 2023-01-02 22:34:05 UTC
 </div>
 </div>
 </body>
