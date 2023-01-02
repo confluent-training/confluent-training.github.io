@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2282 617" style="enable-background:new 0 0 2282 617;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#FFC415;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:#231F20;}
+	.st3{font-family:'MarkPro-Bold';}
+	.st4{font-size:27.9704px;}
+	.st5{font-size:32.6848px;}
+	.st6{fill:#70C169;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st7{fill:#AE2085;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st8{fill:none;}
+	.st9{fill:#AE2085;}
+	.st10{fill:#F26134;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st11{fill:#0075A4;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st12{fill:#0075A4;}
+	.st13{fill:none;stroke:#DA375E;stroke-width:6.3593;stroke-linecap:round;stroke-linejoin:round;}
+	.st14{fill:#DA375E;}
+	.st15{fill:none;stroke:#1B3560;stroke-width:6.3593;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:3.1796,9.5389;}
+	.st16{fill:#1B3560;}
+</style>
+<path class="st0" d="M1218.3,543.5H668c-1.8,0-3.2-1.4-3.2-3.2V10.2c0-1.8,1.4-3.2,3.2-3.2h550.3c1.8,0,3.2,1.4,3.2,3.2v530.1
+	C1221.5,542.1,1220.1,543.5,1218.3,543.5z"/>
+<path class="st1" d="M1201.4,134.3H688.2c-1.5,0-2.7-1.2-2.7-2.7V31.5c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C1204.1,133,1202.8,134.3,1201.4,134.3z"/>
+<text transform="matrix(1 0 0 1 700.3171 90.0061)" class="st2 st3 st4">101</text>
+<path class="st1" d="M1201.4,262.1H688.2c-1.5,0-2.7-1.2-2.7-2.7V159.2c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C1204.1,260.8,1202.8,262.1,1201.4,262.1z"/>
+<text transform="matrix(1 0 0 1 700.3171 217.7478)" class="st2 st3 st4">102</text>
+<path class="st1" d="M1201.4,389.8H688.2c-1.5,0-2.7-1.2-2.7-2.7V287c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C1204.1,388.5,1202.8,389.8,1201.4,389.8z"/>
+<text transform="matrix(1 0 0 1 700.3171 345.4894)" class="st2 st3 st4">103</text>
+<path class="st1" d="M1201.4,517.5H688.2c-1.5,0-2.7-1.2-2.7-2.7V414.7c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C1204.1,516.3,1202.8,517.5,1201.4,517.5z"/>
+<text transform="matrix(1 0 0 1 700.3171 473.231)" class="st2 st3 st4">104</text>
+<text transform="matrix(1 0 0 1 895.5657 610.1564)" class="st2 st3 st5">Kafka</text>
+<path class="st6" d="M1186.3,117H765.8c-1.5,0-2.7-1.2-2.7-2.7V47.7c0-1.5,1.2-2.7,2.7-2.7h420.5c1.5,0,2.7,1.2,2.7,2.7v66.5
+	C1189,115.7,1187.7,117,1186.3,117z"/>
+<text transform="matrix(1 0 0 1 800.1879 90.0061)" class="st2 st3 st4">orders: partition 2</text>
+<path class="st6" d="M1186.3,244H765.8c-1.5,0-2.7-1.2-2.7-2.7v-66.6c0-1.5,1.2-2.7,2.7-2.7h420.5c1.5,0,2.7,1.2,2.7,2.7v66.5
+	C1189,242.7,1187.7,244,1186.3,244z"/>
+<text transform="matrix(1 0 0 1 800.1879 217.0061)" class="st2 st3 st4">orders: partition 0</text>
+<path class="st6" d="M1186.3,500H765.8c-1.5,0-2.7-1.2-2.7-2.7v-66.6c0-1.5,1.2-2.7,2.7-2.7h420.5c1.5,0,2.7,1.2,2.7,2.7v66.5
+	C1189,498.7,1187.7,500,1186.3,500z"/>
+<text transform="matrix(1 0 0 1 844.3168 473.006)" class="st2 st3 st4">orders: partition 1</text>
+<g>
+	<path class="st7" d="M218.7,325.6H11.8c-1.8,0-3.2-1.4-3.2-3.2V116.6c0-1.8,1.4-3.2,3.2-3.2h206.9c1.8,0,3.2,1.4,3.2,3.2v205.8
+		C221.9,324.2,220.5,325.6,218.7,325.6z"/>
+	<rect x="9.6" y="276.3" class="st8" width="212.8" height="38.1"/>
+	<text transform="matrix(1 0 0 1 45.2825 363.8556)" class="st9 st3 st5">producer</text>
+</g>
+<g>
+	<path class="st10" d="M826.4,492.8h-50.6c-1.8,0-3.2-1.4-3.2-3.2V439c0-1.8,1.4-3.2,3.2-3.2h50.6c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C829.6,491.3,828.2,492.8,826.4,492.8z"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 2108.8254 158.7302)" class="st2 st3 st5">order</text>
+	<text transform="matrix(1 0 0 1 2108.8254 197.9302)" class="st2 st3 st5">processing</text>
+	<text transform="matrix(1 0 0 1 2108.8254 237.1302)" class="st2 st3 st5">consumer</text>
+	<text transform="matrix(1 0 0 1 2108.8254 276.4302)" class="st2 st3 st5">group</text>
+	<g>
+		<path class="st0" d="M2069.7,437.3h-242.9c-1.8,0-3.2-1.4-3.2-3.2V65.9c0-1.8,1.4-3.2,3.2-3.2h242.9c1.8,0,3.2,1.4,3.2,3.2V434
+			C2072.9,435.9,2071.5,437.3,2069.7,437.3z"/>
+		<g>
+			<path class="st11" d="M2052.7,139.5h-206.9c-1.8,0-3.2-1.4-3.2-3.2V85.7c0-1.8,1.4-3.2,3.2-3.2h206.9c1.8,0,3.2,1.4,3.2,3.2v50.6
+				C2055.9,138,2054.5,139.5,2052.7,139.5z"/>
+			<text transform="matrix(1 0 0 1 1859.665 169.5721)" class="st12 st3 st5">consumer 0</text>
+		</g>
+		<g>
+			<path class="st11" d="M2052.7,236.8h-206.9c-1.8,0-3.2-1.4-3.2-3.2V183c0-1.8,1.4-3.2,3.2-3.2h206.9c1.8,0,3.2,1.4,3.2,3.2v50.6
+				C2055.9,235.3,2054.5,236.8,2052.7,236.8z"/>
+			<text transform="matrix(1 0 0 1 1859.665 266.8815)" class="st12 st3 st5">consumer 1</text>
+		</g>
+		<g>
+			<path class="st11" d="M2052.7,387.4h-206.9c-1.8,0-3.2-1.4-3.2-3.2V280.3c0-1.8,1.4-3.2,3.2-3.2h206.9c1.8,0,3.2,1.4,3.2,3.2
+				v103.9C2055.9,385.9,2054.5,387.4,2052.7,387.4z"/>
+			<text transform="matrix(1 0 0 1 1859.665 420.9327)" class="st12 st3 st5">consumer 2</text>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<polyline class="st13" points="1832.1,115.2 1319.6,115.2 1319.6,82.1 1200.4,82.1 		"/>
+		<g>
+			<polygon class="st14" points="1213.1,71.3 1202.3,82.1 1213.1,92.9 1203.9,92.9 1193.1,82.1 1203.9,71.3 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<polyline class="st13" points="1832.1,335.1 1319.6,335.1 1319.6,467.4 1200.4,467.4 		"/>
+		<g>
+			<polygon class="st14" points="1213.1,456.7 1202.3,467.4 1213.1,478.2 1203.9,478.2 1193.1,467.4 1203.9,456.7 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st13" x1="1832.1" y1="210.4" x2="1201.4" y2="210.4"/>
+		<g>
+			<polygon class="st14" points="1214.1,199.7 1203.3,210.4 1214.1,221.2 1204.9,221.2 1194.1,210.4 1204.9,199.7 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<polyline class="st15" points="800.3,433.3 800.3,401.7 1440.3,401.7 1440.3,313 1903,313 		"/>
+		<g>
+			<polygon class="st16" points="1890.3,323.8 1901.1,313 1890.3,302.2 1899.5,302.2 1910.2,313 1899.5,323.8 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<path class="st10" d="M1972.6,341.6H1922c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2h50.6c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C1975.8,340.1,1974.4,341.6,1972.6,341.6z"/>
+</g>
+</svg>

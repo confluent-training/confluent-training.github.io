@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 464 110" style="enable-background:new 0 0 464 110;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:none;}
+	.st2{fill:#231F20;}
+	.st3{font-family:'MarkPro-Bold';}
+	.st4{font-size:26.2982px;}
+	.st5{fill:#70C169;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<path class="st0" d="M243.9,55h-46.3c-1.4,0-2.6-1.2-2.6-2.7V4.8c0-1.5,1.1-2.7,2.6-2.7h46.3c1.4,0,2.6,1.2,2.6,2.7v47.4
+	C246.5,53.7,245.3,55,243.9,55z"/>
+<rect x="195" y="18.5" class="st1" width="51.5" height="34.8"/>
+<text transform="matrix(1 0 0 1 213.3841 37.4145)" class="st2 st3 st4">2</text>
+<rect x="10.3" y="18.5" class="st1" width="166.1" height="34.8"/>
+<text transform="matrix(1 0 0 1 97.9711 37.4145)" class="st2 st3 st4">offset</text>
+<rect x="10.3" y="71.9" class="st1" width="166.1" height="34.8"/>
+<text transform="matrix(1 0 0 1 33.5024 90.8337)" class="st2 st3 st4">age in days</text>
+<path class="st0" d="M295.5,55h-46.3c-1.4,0-2.6-1.2-2.6-2.7V4.8c0-1.5,1.1-2.7,2.6-2.7h46.3c1.4,0,2.6,1.2,2.6,2.7v47.4
+	C298,53.7,296.8,55,295.5,55z"/>
+<rect x="246.6" y="18.5" class="st1" width="51.5" height="34.8"/>
+<text transform="matrix(1 0 0 1 264.8148 37.4145)" class="st2 st3 st4">3</text>
+<path class="st0" d="M347,55h-46.3c-1.4,0-2.6-1.2-2.6-2.7V4.8c0-1.5,1.1-2.7,2.6-2.7H347c1.4,0,2.6,1.2,2.6,2.7v47.4
+	C349.6,53.7,348.4,55,347,55z"/>
+<rect x="298.1" y="18.5" class="st1" width="51.5" height="34.8"/>
+<text transform="matrix(1 0 0 1 316.2054 37.4145)" class="st2 st3 st4">4</text>
+<path class="st5" d="M243.9,107.9h-46.3c-1.4,0-2.6-1.2-2.6-2.7V57.8c0-1.5,1.1-2.7,2.6-2.7h46.3c1.4,0,2.6,1.2,2.6,2.7v47.4
+	C246.5,106.7,245.3,107.9,243.9,107.9z"/>
+<rect x="195" y="71.4" class="st1" width="51.5" height="34.8"/>
+<text transform="matrix(1 0 0 1 213.0291 90.3623)" class="st2 st3 st4">6</text>
+<path class="st5" d="M295.5,107.9h-46.3c-1.4,0-2.6-1.2-2.6-2.7V57.8c0-1.5,1.1-2.7,2.6-2.7h46.3c1.4,0,2.6,1.2,2.6,2.7v47.4
+	C298,106.7,296.8,107.9,295.5,107.9z"/>
+<rect x="246.6" y="71.4" class="st1" width="51.5" height="34.8"/>
+<text transform="matrix(1 0 0 1 264.6697 90.3623)" class="st2 st3 st4">5</text>
+<path class="st5" d="M347,107.9h-46.3c-1.4,0-2.6-1.2-2.6-2.7V57.8c0-1.5,1.1-2.7,2.6-2.7H347c1.4,0,2.6,1.2,2.6,2.7v47.4
+	C349.6,106.7,348.4,107.9,347,107.9z"/>
+<rect x="298.1" y="71.4" class="st1" width="51.5" height="34.8"/>
+<text transform="matrix(1 0 0 1 316.4818 90.3623)" class="st2 st3 st4">2</text>
+</svg>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 709 477" style="enable-background:new 0 0 709 477;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#1B3460;stroke-width:2.2403;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;}
+	.st1{fill:none;}
+	.st2{fill:#231F20;}
+	.st3{font-family:'MarkPro-Bold';}
+	.st4{font-size:32.6848px;}
+	.st5{fill:#DA375E;}
+	.st6{fill:#70C169;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;}
+	
+		.st7{fill:#70C169;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.5124,3.5124;}
+	.st8{fill:none;stroke:#DA375E;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<path class="st0" d="M700.5,398.7H8.3c-1.8,0-3.2-1.4-3.2-3.2V189.6c0-1.8,1.4-3.2,3.2-3.2h692.1c1.8,0,3.2,1.4,3.2,3.2v205.8
+	C703.7,397.2,702.2,398.7,700.5,398.7z"/>
+<rect x="7.1" y="270.1" class="st1" width="280.3" height="38.1"/>
+<text transform="matrix(1 0 0 1 33.0506 293.6198)" class="st2 st3 st4">orders: part. 0</text>
+<rect x="268.6" y="430.1" class="st1" width="212.8" height="38.1"/>
+<text transform="matrix(1 0 0 1 327.4115 453.6628)" class="st2 st3 st4">Kafka</text>
+<rect x="208.6" y="43" class="st1" width="212.8" height="117.5"/>
+<text transform="matrix(1 0 0 1 280.9218 66.5639)"><tspan x="0" y="0" class="st5 st3 st4">first </tspan><tspan x="-35.7" y="39.2" class="st5 st3 st4">message</tspan></text>
+<g>
+	<path class="st6" d="M340.5,307.9h-50.6c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2h50.6c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C343.8,306.5,342.3,307.9,340.5,307.9z"/>
+</g>
+<g>
+	<path class="st6" d="M397.6,307.9H347c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2h50.6c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C400.8,306.5,399.3,307.9,397.6,307.9z"/>
+</g>
+<g>
+	<path class="st6" d="M454.6,307.9H404c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2h50.6c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C457.8,306.5,456.4,307.9,454.6,307.9z"/>
+</g>
+<g>
+	<path class="st6" d="M511.6,307.9H461c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2h50.6c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C514.8,306.5,513.4,307.9,511.6,307.9z"/>
+</g>
+<g>
+	<path class="st6" d="M568.6,307.9h-50.6c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2h50.6c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C571.9,306.5,570.4,307.9,568.6,307.9z"/>
+</g>
+<g>
+	<path class="st6" d="M625.7,307.9h-50.6c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2h50.6c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C628.9,306.5,627.4,307.9,625.7,307.9z"/>
+</g>
+<g>
+	<path class="st7" d="M682.7,307.9h-50.6c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2h50.6c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C685.9,306.5,684.5,307.9,682.7,307.9z"/>
+</g>
+<rect x="286.7" y="270.1" class="st1" width="56.9" height="38.1"/>
+<text transform="matrix(1 0 0 1 303.6248 293.6198)" class="st2 st3 st4">0</text>
+<rect x="343.9" y="270.1" class="st1" width="57.7" height="38.1"/>
+<text transform="matrix(1 0 0 1 366.0172 293.6198)" class="st2 st3 st4">1</text>
+<rect x="400.8" y="270.1" class="st1" width="56.9" height="38.1"/>
+<text transform="matrix(1 0 0 1 420.0414 293.6198)" class="st2 st3 st4">2</text>
+<rect x="457.7" y="270.1" class="st1" width="56.9" height="38.1"/>
+<text transform="matrix(1 0 0 1 476.7971 293.6198)" class="st2 st3 st4">3</text>
+<rect x="514.6" y="270.1" class="st1" width="56.9" height="38.1"/>
+<text transform="matrix(1 0 0 1 533.5039 293.6198)" class="st2 st3 st4">4</text>
+<rect x="571.5" y="270.1" class="st1" width="56.9" height="38.1"/>
+<text transform="matrix(1 0 0 1 590.4236 293.6198)" class="st2 st3 st4">5</text>
+<rect x="628.4" y="270.1" class="st1" width="56.9" height="38.1"/>
+<text transform="matrix(1 0 0 1 647.2125 293.6198)" class="st2 st3 st4">6</text>
+<g>
+	<g>
+		<line class="st8" x1="314.7" y1="127.2" x2="314.7" y2="238.9"/>
+		<g>
+			<polygon class="st5" points="307.9,230.9 314.7,237.7 321.4,230.9 321.4,236.7 314.7,243.5 307.9,236.7 			"/>
+		</g>
+	</g>
+</g>
+<rect x="493" y="43" class="st1" width="212.8" height="117.5"/>
+<text transform="matrix(1 0 0 1 569.0426 66.5639)"><tspan x="0" y="0" class="st5 st3 st4">last</tspan><tspan x="-39.4" y="39.2" class="st5 st3 st4">message</tspan></text>
+<g>
+	<g>
+		<line class="st8" x1="599" y1="127.2" x2="599" y2="238.9"/>
+		<g>
+			<polygon class="st5" points="592.2,230.9 599,237.7 605.8,230.9 605.8,236.7 599,243.5 592.2,236.7 			"/>
+		</g>
+	</g>
+</g>
+</svg>

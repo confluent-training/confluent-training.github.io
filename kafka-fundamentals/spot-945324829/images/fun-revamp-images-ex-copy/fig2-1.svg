@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 584 295" style="enable-background:new 0 0 584 295;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#70C169;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:none;}
+	.st3{fill:#231F20;}
+	.st4{font-family:'MarkPro-Bold';}
+	.st5{font-size:32.6848px;}
+	.st6{fill:#F26134;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<path class="st0" d="M567.7,218.3H17.3c-1.8,0-3.2-1.4-3.2-3.2V9.3c0-1.8,1.4-3.2,3.2-3.2h550.3c1.8,0,3.2,1.4,3.2,3.2v205.8
+	C570.9,216.9,569.4,218.3,567.7,218.3z"/>
+<path class="st1" d="M481.9,141.2H103.1c-1.8,0-3.2-1.4-3.2-3.2V60.2c0-1.8,1.4-3.2,3.2-3.2H482c1.8,0,3.2,1.4,3.2,3.2V138
+	C485.1,139.7,483.7,141.2,481.9,141.2z"/>
+<rect x="13" y="168.7" class="st2" width="558" height="38.1"/>
+<text transform="matrix(1 0 0 1 138.2122 192.2642)" class="st3 st4 st5">orders: partition 0</text>
+<rect x="186.1" y="249.8" class="st2" width="212.8" height="38.1"/>
+<text transform="matrix(1 0 0 1 244.9115 273.3395)" class="st3 st4 st5">Kafka</text>
+<g>
+	<path class="st6" d="M167.8,127.6h-50.6c-1.8,0-3.2-1.4-3.2-3.2V73.8c0-1.8,1.4-3.2,3.2-3.2h50.6c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C171,126.2,169.5,127.6,167.8,127.6z"/>
+</g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 212 206" style="enable-background:new 0 0 212 206;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F26134;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;}
+	.st1{fill:#81CFE2;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;}
+	.st2{fill:none;}
+	.st3{fill:#1B3560;}
+	.st4{font-family:'MarkPro-Bold';}
+	.st5{font-size:32.6848px;}
+	.st6{fill:#70C169;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;}
+</style>
+<path class="st0" d="M206.3,203.8H5.7c-1.8,0-3.2-1.4-3.2-3.2V5.4c0-1.8,1.4-3.2,3.2-3.2h200.7c1.8,0,3.2,1.4,3.2,3.2v195.2
+	C209.6,202.4,208.1,203.8,206.3,203.8z"/>
+<g>
+	<g>
+		<path class="st1" d="M189.3,102.9H22.2c-1.8,0-3.2-1.4-3.2-3.2V49.1c0-1.8,1.4-3.2,3.2-3.2h167.1c1.8,0,3.2,1.4,3.2,3.2v50.6
+			C192.6,101.5,191.1,102.9,189.3,102.9z"/>
+		<rect x="20" y="61.5" class="st2" width="173" height="38.1"/>
+		<text transform="matrix(1 0 0 1 79.2365 85.079)" class="st3 st4 st5">key</text>
+	</g>
+	<g>
+		<path class="st6" d="M189.3,160.1H22.2c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2h167.1c1.8,0,3.2,1.4,3.2,3.2v50.6
+			C192.6,158.6,191.1,160.1,189.3,160.1z"/>
+		<rect x="20" y="118.7" class="st2" width="173" height="38.1"/>
+		<text transform="matrix(1 0 0 1 64.4142 142.2171)" class="st3 st4 st5">value</text>
+	</g>
+</g>
+</svg>

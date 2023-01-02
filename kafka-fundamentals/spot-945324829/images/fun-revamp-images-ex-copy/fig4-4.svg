@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 584 617" style="enable-background:new 0 0 584 617;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#FFC415;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:#231F20;}
+	.st3{font-family:'MarkPro-Bold';}
+	.st4{font-size:27.9704px;}
+	.st5{fill:#70C169;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st6{font-size:32.6848px;}
+</style>
+<path class="st0" d="M567.6,541.5H17.4c-1.8,0-3.2-1.4-3.2-3.2V8.2c0-1.8,1.4-3.2,3.2-3.2h550.3c1.8,0,3.2,1.4,3.2,3.2v530.1
+	C570.8,540.1,569.4,541.5,567.6,541.5z"/>
+<path class="st1" d="M550.8,132.3H37.5c-1.5,0-2.7-1.2-2.7-2.7V29.5c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C553.4,131,552.1,132.3,550.8,132.3z"/>
+<text transform="matrix(1 0 0 1 49.6729 88.0712)" class="st2 st3 st4">101</text>
+<path class="st1" d="M550.8,260.1H37.5c-1.5,0-2.7-1.2-2.7-2.7V157.2c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C553.4,258.8,552.1,260.1,550.8,260.1z"/>
+<text transform="matrix(1 0 0 1 49.6729 215.8129)" class="st2 st3 st4">102</text>
+<path class="st1" d="M550.8,387.8H37.5c-1.5,0-2.7-1.2-2.7-2.7V285c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C553.4,386.5,552.1,387.8,550.8,387.8z"/>
+<text transform="matrix(1 0 0 1 49.6729 343.5546)" class="st2 st3 st4">103</text>
+<path class="st1" d="M550.8,515.5H37.5c-1.5,0-2.7-1.2-2.7-2.7V412.7c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C553.4,514.3,552.1,515.5,550.8,515.5z"/>
+<text transform="matrix(1 0 0 1 49.6729 471.2962)" class="st2 st3 st4">104</text>
+<path class="st5" d="M535.6,115H115.2c-1.5,0-2.7-1.2-2.7-2.7V45.7c0-1.5,1.2-2.7,2.7-2.7h420.5c1.5,0,2.7,1.2,2.7,2.7v66.5
+	C538.3,113.7,537,115,535.6,115z"/>
+<text transform="matrix(1 0 0 1 149.5437 88.0712)" class="st2 st3 st4">orders: part. 0 follower</text>
+<path class="st5" d="M535.6,242H115.2c-1.5,0-2.7-1.2-2.7-2.7v-66.6c0-1.5,1.2-2.7,2.7-2.7h420.5c1.5,0,2.7,1.2,2.7,2.7v66.5
+	C538.3,240.7,537,242,535.6,242z"/>
+<text transform="matrix(1 0 0 1 149.5437 215.0712)" class="st2 st3 st4">orders: part. 0 leader</text>
+<path class="st5" d="M535.6,371H115.2c-1.5,0-2.7-1.2-2.7-2.7v-66.6c0-1.5,1.2-2.7,2.7-2.7h420.5c1.5,0,2.7,1.2,2.7,2.7v66.5
+	C538.3,369.7,537,371,535.6,371z"/>
+<text transform="matrix(1 0 0 1 149.5437 344.0712)" class="st2 st3 st4">orders: part. 0 follower</text>
+<text transform="matrix(1 0 0 1 244.9216 608.2216)" class="st2 st3 st6">Kafka</text>
+</svg>

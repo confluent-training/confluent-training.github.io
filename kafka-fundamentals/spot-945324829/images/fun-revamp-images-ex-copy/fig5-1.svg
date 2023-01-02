@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2282 617" style="enable-background:new 0 0 2282 617;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#FFC415;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:#231F20;}
+	.st3{font-family:'MarkPro-Bold';}
+	.st4{font-size:27.9704px;}
+	.st5{font-size:32.6848px;}
+	.st6{fill:#70C169;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st7{fill:#AE2085;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st8{fill:none;}
+	.st9{fill:#AE2085;}
+	.st10{fill:#F26134;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st11{fill:none;stroke:#1B3560;stroke-width:6.3593;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:3.1796,9.5389;}
+	.st12{fill:#1B3560;}
+	.st13{fill:#0075A4;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st14{fill:#0075A4;}
+</style>
+<path class="st0" d="M1215.4,546.7H665.1c-1.8,0-3.2-1.4-3.2-3.2V13.4c0-1.8,1.4-3.2,3.2-3.2h550.3c1.8,0,3.2,1.4,3.2,3.2v530.1
+	C1218.6,545.3,1217.2,546.7,1215.4,546.7z"/>
+<path class="st1" d="M1198.5,137.5H685.3c-1.5,0-2.7-1.2-2.7-2.7V34.7c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C1201.2,136.2,1199.9,137.5,1198.5,137.5z"/>
+<text transform="matrix(1 0 0 1 697.3826 93.2645)" class="st2 st3 st4">101</text>
+<path class="st1" d="M1198.5,265.3H685.3c-1.5,0-2.7-1.2-2.7-2.7V162.4c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C1201.2,264,1199.9,265.3,1198.5,265.3z"/>
+<text transform="matrix(1 0 0 1 697.3826 221.0062)" class="st2 st3 st4">102</text>
+<path class="st1" d="M1198.5,393H685.3c-1.5,0-2.7-1.2-2.7-2.7V290.2c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C1201.2,391.7,1199.9,393,1198.5,393z"/>
+<text transform="matrix(1 0 0 1 697.3826 348.7478)" class="st2 st3 st4">103</text>
+<path class="st1" d="M1198.5,520.7H685.3c-1.5,0-2.7-1.2-2.7-2.7V417.9c0-1.5,1.2-2.7,2.7-2.7h513.2c1.5,0,2.7,1.2,2.7,2.7v100
+	C1201.2,519.5,1199.9,520.7,1198.5,520.7z"/>
+<text transform="matrix(1 0 0 1 697.3826 476.4894)" class="st2 st3 st4">104</text>
+<text transform="matrix(1 0 0 1 892.6313 613.4148)" class="st2 st3 st5">Kafka</text>
+<path class="st6" d="M1183.4,120.2H762.9c-1.5,0-2.7-1.2-2.7-2.7V50.9c0-1.5,1.2-2.7,2.7-2.7h420.5c1.5,0,2.7,1.2,2.7,2.7v66.5
+	C1186.1,118.9,1184.8,120.2,1183.4,120.2z"/>
+<text transform="matrix(1 0 0 1 797.2534 93.2645)" class="st2 st3 st4">orders: partition 2</text>
+<path class="st6" d="M1183.4,247.2H762.9c-1.5,0-2.7-1.2-2.7-2.7v-66.6c0-1.5,1.2-2.7,2.7-2.7h420.5c1.5,0,2.7,1.2,2.7,2.7v66.5
+	C1186.1,245.9,1184.8,247.2,1183.4,247.2z"/>
+<text transform="matrix(1 0 0 1 797.2534 220.2645)" class="st2 st3 st4">orders: partition 0</text>
+<path class="st6" d="M1183.4,503.2H762.9c-1.5,0-2.7-1.2-2.7-2.7v-66.6c0-1.5,1.2-2.7,2.7-2.7h420.5c1.5,0,2.7,1.2,2.7,2.7v66.5
+	C1186.1,501.9,1184.8,503.2,1183.4,503.2z"/>
+<text transform="matrix(1 0 0 1 797.2534 476.2644)" class="st2 st3 st4">orders: partition 1</text>
+<g>
+	<path class="st7" d="M215.8,328.9H8.9c-1.8,0-3.2-1.4-3.2-3.2V119.9c0-1.8,1.4-3.2,3.2-3.2h206.9c1.8,0,3.2,1.4,3.2,3.2v205.8
+		C219,327.5,217.6,328.9,215.8,328.9z"/>
+	<rect x="6.7" y="279.6" class="st8" width="212.8" height="38.1"/>
+	<text transform="matrix(1 0 0 1 42.3481 362.114)" class="st9 st3 st5">producer</text>
+</g>
+<g>
+	<path class="st10" d="M136,233.6H85.4c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2H136c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C139.2,232.1,137.8,233.6,136,233.6z"/>
+</g>
+<g>
+	<g>
+		<line class="st11" x1="151" y1="207.5" x2="646.1" y2="207.5"/>
+		<g>
+			<polygon class="st12" points="633.5,218.3 644.3,207.5 633.5,196.7 642.6,196.7 653.4,207.5 642.6,218.3 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 2105.8911 161.9886)" class="st2 st3 st5">order</text>
+	<text transform="matrix(1 0 0 1 2105.8911 201.1885)" class="st2 st3 st5">processing</text>
+	<text transform="matrix(1 0 0 1 2105.8911 240.3885)" class="st2 st3 st5">consumer</text>
+	<text transform="matrix(1 0 0 1 2105.8911 279.6885)" class="st2 st3 st5">group</text>
+	<g>
+		<path class="st0" d="M2066.8,381.3h-242.9c-1.8,0-3.2-1.4-3.2-3.2V69.2c0-1.8,1.4-3.2,3.2-3.2h242.9c1.8,0,3.2,1.4,3.2,3.2V378
+			C2070,379.9,2068.6,381.3,2066.8,381.3z"/>
+		<g>
+			<path class="st13" d="M2049.8,142.8h-206.9c-1.8,0-3.2-1.4-3.2-3.2V89c0-1.8,1.4-3.2,3.2-3.2h206.9c1.8,0,3.2,1.4,3.2,3.2v50.6
+				C2053,141.3,2051.6,142.8,2049.8,142.8z"/>
+			<text transform="matrix(1 0 0 1 1856.7306 171.8305)" class="st14 st3 st5">consumer 0</text>
+		</g>
+		<g>
+			<path class="st13" d="M2049.8,240.1h-206.9c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2h206.9c1.8,0,3.2,1.4,3.2,3.2
+				v50.6C2053,238.6,2051.6,240.1,2049.8,240.1z"/>
+			<text transform="matrix(1 0 0 1 1856.7306 269.1398)" class="st14 st3 st5">consumer 1</text>
+		</g>
+		<g>
+			<path class="st13" d="M2049.8,337.4h-206.9c-1.8,0-3.2-1.4-3.2-3.2v-50.6c0-1.8,1.4-3.2,3.2-3.2h206.9c1.8,0,3.2,1.4,3.2,3.2
+				v50.6C2053,335.9,2051.6,337.4,2049.8,337.4z"/>
+			<text transform="matrix(1 0 0 1 1856.7306 366.4492)" class="st14 st3 st5">consumer 2</text>
+		</g>
+	</g>
+</g>
+</svg>

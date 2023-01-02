@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 470 108" style="enable-background:new 0 0 470 108;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:none;}
+	.st2{fill:#231F20;}
+	.st3{font-family:'MarkPro-Bold';}
+	.st4{font-size:26.2982px;}
+	.st5{fill:#70C169;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<path class="st0" d="M299.5,54.5h-46.3c-1.4,0-2.6-1.2-2.6-2.7V4.3c0-1.5,1.1-2.7,2.6-2.7h46.3c1.4,0,2.6,1.2,2.6,2.7v47.4
+	C302,53.2,300.8,54.5,299.5,54.5z"/>
+<rect x="250.6" y="18" class="st1" width="51.5" height="34.8"/>
+<text transform="matrix(1 0 0 1 268.9328 36.8884)" class="st2 st3 st4">2</text>
+<rect x="65.8" y="18" class="st1" width="166.1" height="34.8"/>
+<text transform="matrix(1 0 0 1 153.5198 36.8884)" class="st2 st3 st4">offset</text>
+<rect x="65.8" y="71.4" class="st1" width="166.1" height="34.8"/>
+<text transform="matrix(1 0 0 1 188.0096 90.3076)" class="st2 st3 st4">key</text>
+<path class="st0" d="M351,54.5h-46.3c-1.4,0-2.6-1.2-2.6-2.7V4.3c0-1.5,1.1-2.7,2.6-2.7H351c1.4,0,2.6,1.2,2.6,2.7v47.4
+	C353.6,53.2,352.4,54.5,351,54.5z"/>
+<rect x="302.1" y="18" class="st1" width="51.5" height="34.8"/>
+<text transform="matrix(1 0 0 1 320.2053 36.8884)" class="st2 st3 st4">4</text>
+<path class="st5" d="M299.5,107.4h-46.3c-1.4,0-2.6-1.2-2.6-2.7V57.2c0-1.5,1.1-2.7,2.6-2.7h46.3c1.4,0,2.6,1.2,2.6,2.7v47.4
+	C302,106.2,300.8,107.4,299.5,107.4z"/>
+<rect x="250.6" y="70.9" class="st1" width="51.5" height="34.8"/>
+<text transform="matrix(1 0 0 1 268.2687 89.8361)" class="st2 st3 st4">b</text>
+<path class="st5" d="M351,107.4h-46.3c-1.4,0-2.6-1.2-2.6-2.7V57.2c0-1.5,1.1-2.7,2.6-2.7H351c1.4,0,2.6,1.2,2.6,2.7v47.4
+	C353.6,106.2,352.4,107.4,351,107.4z"/>
+<rect x="302.1" y="70.9" class="st1" width="51.5" height="34.8"/>
+<text transform="matrix(1 0 0 1 319.8107 89.8361)" class="st2 st3 st4">a</text>
+</svg>

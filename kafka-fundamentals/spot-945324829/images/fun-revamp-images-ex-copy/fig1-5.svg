@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1712 295" style="enable-background:new 0 0 1712 295;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#70C169;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:#2169B3;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:none;}
+	.st4{fill:#2169B3;}
+	.st5{font-family:'MarkPro-Bold';}
+	.st6{font-size:32.6848px;}
+	.st7{fill:#AE2085;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st8{fill:#AE2085;}
+	.st9{fill:#231F20;}
+	.st10{font-size:18px;}
+	.st11{fill:#F26134;stroke:#1B3460;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st12{fill:none;stroke:#1B3560;stroke-width:6.3593;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:3.1796,9.5389;}
+	.st13{fill:#1B3560;}
+</style>
+<path class="st0" d="M1131.5,215.7H581.2c-1.8,0-3.2-1.4-3.2-3.2V6.7c0-1.8,1.4-3.2,3.2-3.2h550.3c1.8,0,3.2,1.4,3.2,3.2v205.8
+	C1134.7,214.3,1133.3,215.7,1131.5,215.7z"/>
+<path class="st1" d="M1045.8,138.6H666.9c-1.8,0-3.2-1.4-3.2-3.2V57.6c0-1.8,1.4-3.2,3.2-3.2h378.9c1.8,0,3.2,1.4,3.2,3.2v77.7
+	C1049,137.1,1047.5,138.6,1045.8,138.6z"/>
+<g>
+	<path class="st2" d="M1703.8,120.4h-206.9c-1.8,0-3.2-1.4-3.2-3.2V66.6c0-1.8,1.4-3.2,3.2-3.2h206.9c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C1707,118.9,1705.6,120.4,1703.8,120.4z"/>
+	<rect x="1494.7" y="79" class="st3" width="212.8" height="38.1"/>
+	<text transform="matrix(1 0 0 1 1524.3137 153.5083)" class="st4 st5 st6">consumer</text>
+</g>
+<g>
+	<path class="st7" d="M214.5,215.7H7.6c-1.8,0-3.2-1.4-3.2-3.2V6.7c0-1.8,1.4-3.2,3.2-3.2h206.9c1.8,0,3.2,1.4,3.2,3.2v205.8
+		C217.7,214.3,216.3,215.7,214.5,215.7z"/>
+	<rect x="5.4" y="166.4" class="st3" width="212.8" height="38.1"/>
+	<text transform="matrix(1 0 0 1 41.0484 252.9238)" class="st8 st5 st6">producer</text>
+</g>
+<rect x="749.9" y="166.1" class="st3" width="212.8" height="38.1"/>
+<text transform="matrix(1 0 0 1 761.0499 189.6662)" class="st9 st5 st6">orders topic</text>
+<rect x="1495.6" y="135.9" class="st3" width="212.5" height="38.1"/>
+<text transform="matrix(1 0 0 1 1505.3014 180.8999)" class="st9 st5 st10">(subscribed to orders)</text>
+<rect x="749.9" y="247.2" class="st3" width="212.8" height="38.1"/>
+<text transform="matrix(1 0 0 1 808.7442 270.7415)" class="st9 st5 st6">Kafka</text>
+<g>
+	<path class="st11" d="M731.6,125H681c-1.8,0-3.2-1.4-3.2-3.2V71.2c0-1.8,1.4-3.2,3.2-3.2h50.6c1.8,0,3.2,1.4,3.2,3.2v50.6
+		C734.8,123.6,733.4,125,731.6,125z"/>
+</g>
+<g>
+	<g>
+		<line class="st12" x1="748.4" y1="98.3" x2="1474.4" y2="98.3"/>
+		<g>
+			<polygon class="st13" points="1461.8,109.1 1472.6,98.3 1461.8,87.5 1470.9,87.5 1481.7,98.3 1470.9,109.1 			"/>
+		</g>
+	</g>
+</g>
+</svg>
