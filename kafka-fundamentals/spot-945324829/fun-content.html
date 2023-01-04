@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Apache Kafka&#174; Technical Fundamentals</title>
+<title>Confluent Technical Fundamentals Apache Kafka&#174; Self-Paced Content</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>Apache Kafka&#174; Technical Fundamentals</h1>
+<h1>Confluent Technical Fundamentals Apache Kafka&#174; Self-Paced Content</h1>
 <div class="details">
 <span id="revnumber">version 7.0.0-v1.0.2</span>
 </div>
@@ -1015,7 +1015,7 @@ In this picture, the consumer has last read the message at offset 3.
 <p>If all the consumers in a group are doing the same thing, to do something different with a message that&#8217;s practical, we&#8217;d need a different consumer group. In our last picture, we had 3 consumers in a group processing orders.</p>
 </div>
 <div class="paragraph">
-<p>Now, we&#8217;ll add on a second group&#8201;&#8212;&#8201;the two orange consumers are tracking inventory. They need to see the same orders that the other group did, but for a different reason&#8201;&#8212;&#8201;perhaps some ingredients got used a lot at lunch time and these consumers can trigger a process that ships more before dinner time. I like this idea! No one likes it when you get told, "sorry, we&#8217;re out of this, this, and this on the menu"!</p>
+<p>Now, we&#8217;ll add on a second group&#8201;&#8212;&#8201;the two orange consumers are tracking inventory. They need to see the same orders that the other group did, but for a different reason&#8201;&#8212;&#8201;perhaps some ingredients got used a lot at lunch time and these consumers can trigger a process that ships more before dinner time. This is good! No one likes it when you get told, "sorry, we&#8217;re out of this, this, and this on the menu"!</p>
 </div>
 </div>
 </details>
@@ -1640,7 +1640,7 @@ Partitions are divided into segments, which affect both retention policies.
 <p>The picture you see now shows the ideas of a producer, Kafka, and consumers like we started with. But now the picture also shows brokers and partitions&#8201;&#8212;&#8201;and we have a consumer group instead of a singe consumer.</p>
 </div>
 <div class="paragraph">
-<p>Here, we&#8217;re focusing on the producer side. SRemember that producers first prepare messages, and when they do, they associate a topic with each message. We are again using the idea that a message&#8201;&#8212;&#8201;that little orange box in the picture&#8201;&#8212;&#8201;will correspond to a food order, and it will be part of the <code>orders</code> topic.</p>
+<p>Here, we&#8217;re focusing on the producer side. Remember that producers first prepare messages, and when they do, they associate a topic with each message. We are again using the idea that a message&#8201;&#8212;&#8201;that little orange box in the picture&#8201;&#8212;&#8201;will correspond to a food order, and it will be part of the <code>orders</code> topic.</p>
 </div>
 <div class="paragraph">
 <p>The producer runs the message through a serliazer to convert it to bytes and then runs it through a partitioner to decide what specific partition of the orders topic will get this message. And then&#8201;&#8212;&#8201;omitting some details&#8201;&#8212;&#8201;it can send it off. One of those details is that the producer can be tuned to send more than one message at once, allowing you to  optimize for the kind of throughput and latency you want.</p>
@@ -1905,7 +1905,7 @@ Partitions are divided into segments, which affect both retention policies.
 <div id="footer">
 <div id="footer-text">
 Version 7.0.0-v1.0.2<br>
-Last updated 2023-01-04 20:01:47 UTC
+Last updated 2023-01-04 20:47:27 UTC
 </div>
 </div>
 </body>
