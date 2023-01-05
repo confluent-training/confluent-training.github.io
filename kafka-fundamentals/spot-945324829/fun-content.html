@@ -1073,7 +1073,7 @@ In this picture, the consumer has last read the message at offset 3.
 </div>
 </div>
 <details>
-<summary class="title">Commentary</summary>
+<summary class="title">Commentary, Part 1: Group Coverage</summary>
 <div class="content">
 <div class="paragraph">
 <p>Now that we have 3 partitions, we can really see consumption happening in parallel. We said before that consumers subscribe to topics. More specifically, Kafka will assign each consumer a partition&#8201;&#8212;&#8201;or partitions&#8201;&#8212;&#8201;of the subscribed topics. Kafka will also take care of making sure that every partition gets assigned to one of the consumers in the group. This is important&#8201;&#8212;&#8201;nobody&#8217;s order gets missed.</p>
@@ -1081,8 +1081,19 @@ In this picture, the consumer has last read the message at offset 3.
 <div class="paragraph">
 <p>In essence, our consumers in the group are working together as a team to consume all the orders. And, in our picture with the order processing group there were three consumers. Conveniently, we have three partitions too, so each consumer is processing one partition. It&#8217;s sort of like a virtualization of if every partition were a line at the front of a restaurant and each consumer were one of the folks working a register taking orders.</p>
 </div>
+</div>
+</details>
+<details>
+<summary class="title">Commentary, Part 2: Offsets</summary>
+<div class="content">
 <div class="paragraph">
-<p>Each consumer needs to know who&#8217;s next in line, and does that with a consumer offset. Notice in the picture that there&#8217;s an arrow from every consumer to a specific offset in an assigned partition. The arrow points to that consumer&#8217;s offset in that partition. So consumer 0 has presumably processed the orders at offsets <code>0</code> through <code>4</code> in partition 0 and is ready to take process the order at offset <code>5</code>. And consumer 1 has taken one customer&#8217;s order in partition 1. Partition 2 is effectively the line you want to get in when you go into the restaurant. The assigned consumer, consumer 2, has processed all the orders and has its consumer offset set at <code>5</code>, ready to process the next order that arrives.</p>
+<p>Each consumer needs to know who&#8217;s next in line, and does that with a consumer offset. Notice in the picture that there&#8217;s an arrow from every consumer to a specific offset in an assigned partition. The arrow points to that consumer&#8217;s offset in that partition.</p>
+</div>
+<div class="paragraph">
+<p>So, consumer 0 has presumably processed the orders at offsets <code>0</code> through <code>4</code> in partition 0 and is ready to take process the order at offset <code>5</code>. And consumer 1 has taken one customer&#8217;s order in partition 1.</p>
+</div>
+<div class="paragraph">
+<p>Partition 2 is effectively the line you want to get in when you go into the restaurant. The assigned consumer, consumer 2, has processed all the orders and has its consumer offset set at <code>4</code>, ready to process the next order that arrives.</p>
 </div>
 </div>
 </details>
@@ -1097,7 +1108,7 @@ In this picture, the consumer has last read the message at offset 3.
 </div>
 </div>
 <details>
-<summary class="title">Commentary</summary>
+<summary class="title">Commentary, Part 1: Cardinality</summary>
 <div class="content">
 <div class="paragraph">
 <p>For completeness, let&#8217;s add some more into that picture. You&#8217;ll see the same picture as before, but this time the inventory consumer group is showing too.</p>
@@ -1105,11 +1116,19 @@ In this picture, the consumer has last read the message at offset 3.
 <div class="paragraph">
 <p>A difference is that there are just 2 consumers in this group. But every order&#8201;&#8212;&#8201;in all three partitions&#8201;&#8212;&#8201;has to get counted in inventory. With two consumers and three partitions, that means that one of those consumers is going to have to be processing two partitions.</p>
 </div>
+</div>
+</details>
+<details>
+<summary class="title">Commentary, Part 2: Offsets</summary>
+<div class="content">
 <div class="paragraph">
 <p>Notice also that there are offsets from <em>each</em> consumer to each assigned partition. Consumer 3 is processing two partitions, but it&#8217;s at offset <code>2</code> in partition 0 and offset <code>1</code> in partition 1.</p>
 </div>
 <div class="paragraph">
-<p>Also, if we look at partition 2, we see the two different consumers are at different places. That&#8217;s pretty likely, and this is probably the natural situation you&#8217;d expect. Consumer 2, processing orders, is a couple orders ahead of consumer 4, who is tallying those orders for inventory. But nothing says it has to be this way. The consumers in the different groups are totally independent. So you see&#8201;&#8212;&#8201;intentionally&#8201;&#8212;&#8201;an example of this with partition 0, where the inventory-tracking consumer is an order ahead of the order-processing consumer.</p>
+<p>Also, if we look at partition 2, we see the two different consumers are at different places. That&#8217;s pretty likely, and this is probably the natural situation you&#8217;d expect. Consumer 2, processing orders, is a couple orders ahead of consumer 4, who is tallying those orders for inventory.</p>
+</div>
+<div class="paragraph">
+<p>But nothing says it has to be this way. The consumers in the different groups are totally independent. So you see&#8201;&#8212;&#8201;intentionally&#8201;&#8212;&#8201;an example of this with partition 0, where the inventory-tracking consumer is an order ahead of the order-processing consumer.</p>
 </div>
 </div>
 </details>
@@ -1182,7 +1201,7 @@ More on how all of this works in both our Developer and Administrator training!
 </table>
 </div>
 <details>
-<summary class="title">Commentary</summary>
+<summary class="title">Commentary, Part 1</summary>
 <div class="content">
 <div class="paragraph">
 <p>One last thing to talk about here. Essentially, you can change some things about your deployment.</p>
@@ -1196,6 +1215,11 @@ More on how all of this works in both our Developer and Administrator training!
 <div class="paragraph">
 <p>This is great for helping you get parallelism, but if you have four partitions, you can&#8217;t have more than four consumers processing them at once. However, you can also increase the number of parititons, and if you did, this also would cause Kafka to automatically move around the assignments of consumers to partitions. We call this rebalancing.</p>
 </div>
+</div>
+</details>
+<details>
+<summary class="title">Commentary, Part 2: Wrap-Up</summary>
+<div class="content">
 <div class="paragraph">
 <p>And, it&#8217;s pretty big deal and there&#8217;s a lot to understand to really get all the details, but that&#8217;s all you need to know for now! We go much, much deeper into this concept in both of our Developer and Administration courses - from different perspectives.</p>
 </div>
@@ -1368,7 +1392,7 @@ More on how all of this works in both our Developer and Administrator training!
 </tbody>
 </table>
 <details>
-<summary class="title">Commentary</summary>
+<summary class="title">Commentary, Part 1: The Idea and Leaders</summary>
 <div class="content">
 <div class="paragraph">
 <p>Okay, great, data lives on partitions and partitions live on brokers.</p>
@@ -1377,16 +1401,24 @@ More on how all of this works in both our Developer and Administrator training!
 <p>No matter how they&#8217;re deployed, brokers ultimately live on hardware that may fail or become unreachable. But customers want real-time responses and you want your data to be available. If my lunch order lands on the partition on Broker 102 and something&#8217;s wrong with Broker 102, I still want my lunch and I still want it at lunch time.</p>
 </div>
 <div class="paragraph">
-<p>So what can we do about this? Well, the answer is replication, and I want to tell you a little bit about that here.</p>
+<p>So what can we do about this? Well, the answer is replication&#8230;&#8203;</p>
 </div>
 <div class="paragraph">
 <p>We can turn on replication, and when we do, we sort of have backup copies of every partition&#8201;&#8212;&#8201;or better said, multiple instances of each partition. One instance, the main one, we call the leader, and all writes go to the leader. Furthermore, the consumers also read from the leader.</p>
 </div>
+</div>
+</details>
+<details>
+<summary class="title">Commentary, Part 2: Followers and Failover</summary>
+<div class="content">
 <div class="paragraph">
-<p>There are additionally replicas called followers, and they keep up with the leader in the background. In our picture, you now see just one partition, with its leader on Broker 102 - and two followers - one on 101 and one on 103. If something were to cause Broker 102 to be unavailable, our leader replica is unavailable, but Kafka can detect this and promote one of those followers - from 101 or 103 - to become the leader. And this is good, because it keeps our data highly available. I still get my lunch that landed on the parition on 102 in a reasonable amount of time (and if it&#8217;s all managed right, I probably have no idea anything ever went wrong.)</p>
+<p>There are additionally replicas called followers, and they keep up with the leader in the background. In our picture, you now see just one partition, with its leader on Broker 102 - and two followers - one on 101 and one on 103. If something were to cause Broker 102 to be unavailable, our leader replica is unavailable, but Kafka can detect this and promote one of those followers - from 101 or 103 - to become the leader.</p>
 </div>
 <div class="paragraph">
-<p>That&#8217;s the big picture story of replication and we&#8217;ll leave it at that for here. If you want to learn more of the details, we go into lots of depth in the Developer and Administration classes&#8201;&#8212;&#8201;of course, tailored to each of those roles.</p>
+<p>And this is good, because it keeps our data highly available. You still get my lunch that landed on the parition on 102 in a reasonable amount of time (and if it&#8217;s all managed right, you probably have no idea anything ever went wrong.)</p>
+</div>
+<div class="paragraph">
+<p>That&#8217;s the big picture story of replication, and we&#8217;ll leave it at that for here. If you want to learn more of the details, we go into lots of depth in the Developer and Administration classes&#8201;&#8212;&#8201;of course, tailored to each of those roles.</p>
 </div>
 </div>
 </details>
@@ -1520,7 +1552,7 @@ Partitions are divided into segments, which affect both retention policies.
 </table>
 </div>
 <details>
-<summary class="title">Commentary</summary>
+<summary class="title">Commentary: Part 1</summary>
 <div class="content">
 <div class="paragraph">
 <p>All right - one last important thing. Yes, you cannot change a message, but that doesn&#8217;t mean messages stay in Kafka forever. Back to that idea that we use Kafka to process data in motion. So, there must be some way of controlling how long messages stay in Kafka. And there is. We call that a retention policy.</p>
@@ -1542,19 +1574,24 @@ Partitions are divided into segments, which affect both retention policies.
 </div>
 </details>
 <details>
-<summary class="title">Commentary: Compaction (right column), Wrap-Up</summary>
+<summary class="title">Commentary: Compaction (right column)</summary>
 <div class="content">
 <div class="paragraph">
 <p>On the right, there&#8217;s a little taste of the other major retention policy: compaction. This one only cares about keys. It applies in use cases where keeping older values of a key doesn&#8217;t make sense. This works nicely for things like tracking the state of an online shopping order.</p>
 </div>
 <div class="paragraph">
-<p>You&#8217;ll see the same log as in the deletion example, except this time we care about keys and only keep the latest message per key. There&#8217;s an appearance of key <em>a</em> at offset 0, but the later appearance of key <em>a</em> at offset 3 renders the message at offset 0 old information. So, it&#8217;s red and will go away. But, there&#8217;s an even newer appearance of key <em>a</em> at offset 4, making even the offset 3 message old and it will also go away.</p>
+<p>You&#8217;ll see the same log as in the deletion example, except this time we care about keys and only keep the latest message per key. There&#8217;s an appearance of key <em>a</em> at offset 0, but the later appearance of key <em>a</em> at offset 3 renders the message at offset 0 old information. So, it&#8217;s red and will go away. But, there&#8217;s an even newer appearance of key <em>a</em> at offset 4, making even the offset 3 message old, and it will also go away.</p>
 </div>
 <div class="paragraph">
-<p>Looking at key <em>b</em>, we see its latest appearance at offset 2, and this makes the one at offset 1 be deemed old and it will be compacted away. We&#8217;re left with only the messages at offsets 2 and 4&#8201;&#8212;&#8201;only one appearance per key.</p>
+<p>Looking at key <em>b</em>, we see its latest appearance at offset 2, and this makes the one at offset 1 be deemed old, and it will be compacted away. We&#8217;re left with only the messages at offsets 2 and 4&#8201;&#8212;&#8201;only one appearance per key.</p>
 </div>
+</div>
+</details>
+<details>
+<summary class="title">Commentary: Wrap-Up</summary>
+<div class="content">
 <div class="paragraph">
-<p>There&#8217;s a lot more to say about these policies, but this is the basic idea and if you understand this, you&#8217;re well on your way to learning Kafka. One of those details is that partitions are further divided into something called segments, and they have an impact on the implementation. But this is enough for now!</p>
+<p>There&#8217;s a lot more to say about these policies, but this is the basic idea and if you understand this, you&#8217;re well on your way to learning Kafka. One of those details is that partitions are further divided into something called segments, and they have an impact on the implementation. (One such detail is that the deletion threshold more accurately applies to the <em>newest</em> message in each segment, not <em>every</em> message.) But this is enough for now!</p>
 </div>
 </div>
 </details>
@@ -1570,22 +1607,10 @@ Partitions are divided into segments, which affect both retention policies.
 <summary class="title">Commentary</summary>
 <div class="content">
 <div class="paragraph">
-<p>With that, it&#8217;s time again to take a break and I invite you to review what you&#8217;ve learned in this lesson and the previous with a quick quiz. This one&#8217;s a little more involved than the last.</p>
+<p>With that, it&#8217;s time again to take a break and review what you&#8217;ve learned in this lesson and the previous with a quick quiz. This one&#8217;s a little more involved than the last.</p>
 </div>
 <div class="paragraph">
-<p>[Cmd+3] Here&#8217;s what it looks like.</p>
-</div>
-<div class="paragraph">
-<p>As before &#8230;&#8203; If you&#8217;re viewing this On Demand via our website, you&#8217;ll find the link to the quiz next in your learning path. If you&#8217;re viewing this via YouTube, you&#8217;ll find the link to the quiz down below in the description.</p>
-</div>
-<div class="paragraph">
-<p>And either way, the quiz is powered by Google Forms, it&#8217;s quick, and it&#8217;s anonymous. You&#8217;ll instantly get feedback when you click the submit button.</p>
-</div>
-<div class="paragraph">
-<p>Once you&#8217;ve done that, come back for the final lesson. I&#8217;ll recap what we&#8217;ve talked about and we&#8217;ll look at the life cycle of a message again, now that we know more details. And I&#8217;ll give you a taste of some other things you can do with Kafka and related Confluent products, and leave you with some additional exercises to go deeper with what you&#8217;ve learned and experience some it firsthand.</p>
-</div>
-<div class="paragraph">
-<p>Cmd+1</p>
+<p>It works as before, and you&#8217;ll instantly get feedback when you click the submit button.</p>
 </div>
 </div>
 </details>
@@ -1905,7 +1930,7 @@ Partitions are divided into segments, which affect both retention policies.
 <div id="footer">
 <div id="footer-text">
 Version 7.0.0-v1.0.2<br>
-Last updated 2023-01-05 14:59:31 UTC
+Last updated 2023-01-05 16:27:09 UTC
 </div>
 </div>
 </body>
