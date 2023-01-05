@@ -1656,7 +1656,7 @@ Partitions are divided into segments, which affect both retention policies.
 </ul>
 </div>
 <details>
-<summary class="title">Commentary</summary>
+<summary class="title">Commentary: Big Picture</summary>
 <div class="content">
 <div class="paragraph">
 <p>Let&#8217;s begin by recapping the life cycle of a message. Over the next three slides, you&#8217;ll see pictures similar to what you saw in the first lesson. But now, we&#8217;ll see those illustrations enhanced with many details you&#8217;ve learned about since then.</p>
@@ -1664,6 +1664,11 @@ Partitions are divided into segments, which affect both retention policies.
 <div class="paragraph">
 <p>The picture you see now shows the ideas of a producer, Kafka, and consumers like we started with. But now the picture also shows brokers and partitions&#8201;&#8212;&#8201;and we have a consumer group instead of a singe consumer.</p>
 </div>
+</div>
+</details>
+<details>
+<summary class="title">Commentary: Production Details</summary>
+<div class="content">
 <div class="paragraph">
 <p>Here, we&#8217;re focusing on the producer side. Remember that producers first prepare messages, and when they do, they associate a topic with each message. We are again using the idea that a message&#8201;&#8212;&#8201;that little orange box in the picture&#8201;&#8212;&#8201;will correspond to a food order, and it will be part of the <code>orders</code> topic.</p>
 </div>
@@ -1746,7 +1751,7 @@ Partitions are divided into segments, which affect both retention policies.
 </ul>
 </div>
 <details>
-<summary class="title">Commentary</summary>
+<summary class="title">Commentary, Part 1</summary>
 <div class="content">
 <div class="paragraph">
 <p>Now let&#8217;s look at the consumption end of the picture.</p>
@@ -1754,6 +1759,11 @@ Partitions are divided into segments, which affect both retention policies.
 <div class="paragraph">
 <p>So, remember that consumers have the job of reading messages. And they generally operate in groups to distribute the workload of reading. A consumer must subscribe to topics it is interested in&#8201;&#8212;&#8201;that&#8217;s the "sub" of "pub-sub." And, all the consumers in a group get assigned partitions of the subscribed topics.</p>
 </div>
+</div>
+</details>
+<details>
+<summary class="title">Commentary, Part 2</summary>
+<div class="content">
 <div class="paragraph">
 <p>In our picture, we have a group of consumers processing orders, and we see the partition assignments via the arrows. We&#8217;ll focus on consumer 2, subscribed to <code>orders</code> and assigned to partition 1. Like all consumers, it must poll for new messages, and when it does, since partition 1 has our orange message, it&#8217;ll be able to fetch it&#8201;&#8212;&#8201;and then go on to whatever it does to process it.</p>
 </div>
@@ -1930,7 +1940,7 @@ Partitions are divided into segments, which affect both retention policies.
 <div id="footer">
 <div id="footer-text">
 Version 7.0.0-v1.0.2<br>
-Last updated 2023-01-05 17:07:42 UTC
+Last updated 2023-01-05 17:20:16 UTC
 </div>
 </div>
 </body>
